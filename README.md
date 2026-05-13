@@ -83,6 +83,138 @@ python3 purchase_plan.py --weekend-boost 1.2  # 跨周末销量加成（默认 1
 python3 purchase_plan.py --stock /path/xlsx   # 指定盘货文件
 ```
 
+---
+
+## 📦 库存管理系统（2026-05-13 新增）
+
+### 核心文件
+
+| 文件 | 功能 |
+|------|------|
+| `inventory_manager.py` | **库存管理核心模块**（扣减、入库、调账、日志、持久化存储） |
+| `import_inventory_from_template.py` | 从 `stock_template.csv` 批量导入初始库存 |
+| `weekly_run_all.py` | **一键运行脚本**（每周只需要运行这一个！） |
+| `inventory_integration.py` | 库存系统与销售脚本集成示例 |
+
+### 生成的数据文件
+
+| 文件 | 说明 | ⚠️ 注意 |
+|------|------|--------|
+| `data/inventory.json` | **库存数据文件**（永久保存每个 SKU 的当前库存） | ❌ 不要手动删除！ |
+| `data/inventory_log.json` | **库存变动日志**（所有操作永久记录，方便追溯） | ❌ 不要手动删除！ |
+
+---
+
+### 🚀 使用流程
+
+#### 第一步：初始化库存（只需要做一次！）
+
+从现有的 `stock_template.csv` 批量导入：
+
+```bash
+python3 import_inventory_from_template.py
+```
+
+脚本会自动：
+- 读取所有 SKU 信息
+- 换算成基准单位（自动处理 TBD 待定项）
+- 生成 `data/inventory.json` 和 `data/inventory_log.json`
+
+---
+
+#### 第二步：每周一键运行（最重要！）
+
+以后每周**只需要运行这一个脚本**，剩下的全自动：
+
+```bash
+python3 weekly_run_all.py
+```
+
+**自动完成以下流程：**
+1. ✅ 汇总销售数据（summarize_by_sku）
+2. ✅ 计算调料消耗（seasoning_calc）
+3. 📉 **自动扣减库存**
+4. ✅ 重算安全库存 + 生成盘货模板
+5. 🛒 生成补货建议
+6. 📦 显示当前库存清单
+7. 🎮 交互式入库/调账菜单
+
+---
+
+#### 第三步：独立库存管理工具
+
+平时想单独管理库存，直接运行：
+
+```bash
+python3 inventory_manager.py
+```
+
+**交互式菜单功能：**
+```
+1. 查看当前库存
+2. 手动入库（补货到货）
+3. 手动扣减（损耗/赠送）
+4. 调账（每月实际库存对账）← 你每月用这个
+5. 查看操作日志
+6. 初始化新 SKU
+0. 退出
+```
+
+---
+
+### 📜 操作日志示例
+
+所有操作永久记录，方便追溯：
+
+```
+时间                类型    SKU           数量     原因
+---------------------------------------------------------------------
+2026-05-13 15:30  入库    SKU001       +20.00  补货入库
+2026-05-13 15:25  扣减    SKU001       -15.50  40天销售消耗
+2026-05-12 10:00  调账    SKU002        +3.50  每月对账调账
+2026-05-10 09:30  扣减    SKU003        -2.00  赠送客户
+2026-05-08 14:15  初始化 SKU001       100.00  初始化库存
+```
+
+---
+
+### 💡 每月对账流程
+
+1. 盘完实际库存
+2. 运行 `python3 inventory_manager.py`
+3. 选择 `4. 调账`
+4. 逐个输入 SKU 的实际库存数量
+5. 系统自动计算差异并永久记录
+
+---
+
+### 🔧 代码调用示例
+
+在其他脚本中调用库存管理：
+
+```python
+from inventory_manager import InventoryManager
+
+inv = InventoryManager()
+
+# 扣减库存
+inv.deduct_sales("SKU001", 15.5, "销售消耗")
+
+# 补货入库
+inv.add_restock("SKU001", 20, "新货到了")
+
+# 调账
+inv.adjust_inventory("SKU001", 100, "每月对账")
+
+# 查看库存
+inv.print_inventory()
+
+# 查看日志
+inv.print_logs(10)
+```
+
+---
+
 ## 订单数口径（`order_count.py`）
 
 按"一个辣度选择 = 一单"的口径，从 `sales_raw.xlsx` 里汇总：
