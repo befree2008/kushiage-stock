@@ -1,17 +1,80 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-按 SKU 汇总 4/1–5/10（40天）销量报表。
+按 SKU 汇总指定日期范围的销量报表。
+✅ 自动从 sales_raw.xlsx 提取日期范围，无需手动设置！
+
 输出:
-  sku_sales_summary.csv
+  sku_sales_summary.csv（包含日期元数据）
   控制台打印排行榜
 """
 import csv
+import re
+import zipfile
+import xml.etree.ElementTree as ET
 from collections import defaultdict
 from pathlib import Path
 
 DATA = Path("data")
-DAYS = 40  # 4/1 - 5/10
+
+
+def extract_dates_from_excel(xlsx_path: str = None) -> dict:
+    """
+    自动从 sales_raw.xlsx 提取营业日期范围
+    返回: {start_date: '2026-04-01', end_date: '2026-05-10', days: 40}
+    """
+    if xlsx_path is None:
+        xlsx_path = DATA / "sales_raw.xlsx"
+
+    # 直接读取 xlsx 内部 XML，不需要 openpyxl
+    with zipfile.ZipFile(xlsx_path) as zf:
+        with zf.open('xl/worksheets/sheet1.xml') as f:
+            content = f.read().decode('utf-8')
+
+    # 查找 A2 单元格的日期格式: 营业日期【2026/04/01-2026/05/10】
+    # 用正则匹配日期范围
+    date_pattern = r'营业日期【(\d{4})/(\d{2})/(\d{2})[-~至](\d{4})/(\d{2})/(\d{2})】'
+    match = re.search(date_pattern, content)
+
+    if not match:
+        # 尝试匹配其他格式
+        alt_pattern = r'(\d{4})/(\d{2})/(\d{2})[-~至](\d{4})/(\d{2})/(\d{2})'
+        match = re.search(alt_pattern, content)
+
+    if not match:
+        raise ValueError(
+            "❌ 无法从 Excel 提取日期！\n"
+            "请确认 sales_raw.xlsx 的 A2 单元格应该包含类似格式：\n"
+            "   营业日期【2026/04/01-2026/05/10】"
+        )
+
+    y1, m1, d1, y2, m2, d2 = match.groups()
+    start_date = f"{y1}-{m1}-{d1}"
+    end_date = f"{y2}-{m2}-{d2}"
+
+    # 计算天数
+    from datetime import datetime
+    d_start = datetime.strptime(start_date, "%Y-%m-%d")
+    d_end = datetime.strptime(end_date, "%Y-%m-%d")
+    days = (d_end - d_start).days + 1
+
+    return {
+        "start_date": start_date,
+        "end_date": end_date,
+        "days": days
+    }
+
+
+# ✅ 自动提取日期，无需手动设置！
+try:
+    DATE_INFO = extract_dates_from_excel()
+    SALES_START_DATE = DATE_INFO["start_date"]
+    SALES_END_DATE = DATE_INFO["end_date"]
+    DAYS = DATE_INFO["days"]
+    print(f"✅ 自动提取日期成功: {SALES_START_DATE} ~ {SALES_END_DATE} ({DAYS} 天)")
+except Exception as e:
+    print(f"❌ 日期提取失败: {e}")
+    exit(1)
 
 # 加载 SKU 字典，保证没卖过的 SKU 也出现在报表里（销量=0）
 skus = {}
@@ -73,12 +136,19 @@ for sku_id, info in skus.items():
 # 按周均消耗降序
 rows.sort(key=lambda r: -r["周均消耗"])
 
-# 导出 CSV
+# 导出 CSV（先写元数据，再写表头和数据）
 out = DATA / "sku_sales_summary.csv"
 with out.open("w", encoding="utf-8-sig", newline="") as f:
-    w = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
-    w.writeheader()
-    w.writerows(rows)
+    w = csv.writer(f)
+    # 元数据行（# 开头，方便解析）
+    w.writerow(["# sales_start_date", SALES_START_DATE])
+    w.writerow(["# sales_end_date", SALES_END_DATE])
+    w.writerow(["# sales_days", DAYS])
+    w.writerow(["# generated_at", __import__("datetime").datetime.now().isoformat()])
+    # 数据表头和数据
+    w.writerow(list(rows[0].keys()))
+    for r in rows:
+        w.writerow(list(r.values()))
 
 # ==== 打印报表 ====
 print("=" * 92)

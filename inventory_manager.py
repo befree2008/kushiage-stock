@@ -29,15 +29,20 @@ class InventoryManager:
         if not INVENTORY_FILE.exists():
             # 初始化空库存
             initial = {
-                "version": "1.0",
+                "version": "1.1",
                 "last_updated": None,
-                "skus": {}  # sku_id -> {"quantity": 数量, "unit": "串/袋/kg", "last_check": 日期}
+                "skus": {},  # sku_id -> {"quantity": 数量, "unit": "串/袋/kg", "last_check": 日期}
+                "last_sales_deduction": None,  # 上次销售扣减的日期范围 {start, end, days}
             }
             self._save_inventory(initial)
             return initial
 
         with open(INVENTORY_FILE, 'r', encoding='utf-8') as f:
-            return json.load(f)
+            data = json.load(f)
+            # 兼容旧版本：如果没有 last_sales_deduction 字段，加上
+            if "last_sales_deduction" not in data:
+                data["last_sales_deduction"] = None
+            return data
 
     def _save_inventory(self, data: Dict = None):
         """保存库存数据"""
@@ -159,11 +164,131 @@ class InventoryManager:
         """获取所有库存"""
         return self.inventory["skus"]
 
+    # ============================================================
+    #  销售日期防呆校验
+    # ============================================================
+
+    def parse_sales_summary_metadata(self, csv_path: str = None) -> Dict:
+        """
+        解析 sku_sales_summary.csv 里的日期元数据
+        返回: {start_date, end_date, days, generated_at}
+        """
+        if csv_path is None:
+            csv_path = Path("data/sku_sales_summary.csv")
+
+        metadata = {}
+        with open(csv_path, 'r', encoding='utf-8-sig') as f:
+            import csv
+            reader = csv.reader(f)
+            for row in reader:
+                if not row:
+                    continue
+                # 元数据行以 # 开头
+                if row[0].startswith("#"):
+                    key = row[0][1:].strip()
+                    value = row[1].strip() if len(row) > 1 else ""
+                    metadata[key] = value
+                else:
+                    # 遇到非 # 开头的行，说明已经到了数据部分，停止
+                    break
+
+        result = {
+            "start_date": metadata.get("sales_start_date", ""),
+            "end_date": metadata.get("sales_end_date", ""),
+            "days": int(metadata.get("sales_days", 0)) if metadata.get("sales_days") else 0,
+            "generated_at": metadata.get("generated_at", ""),
+        }
+        return result
+
+    def validate_sales_date_range(self, start_date: str, end_date: str) -> Dict:
+        """
+        校验销售日期范围，防止重复扣减或遗漏
+        返回: {"ok": bool, "warnings": [str], "errors": [str]}
+        """
+        result = {"ok": True, "warnings": [], "errors": []}
+
+        # 如果是第一次扣减，直接通过
+        last = self.inventory.get("last_sales_deduction")
+        if last is None:
+            result["warnings"].append("第一次扣减，无历史记录对比")
+            return result
+
+        from datetime import datetime, timedelta
+
+        last_start = last["start_date"]
+        last_end = last["end_date"]
+
+        # 1. 检查是否完全相同（重复扣减）
+        if start_date == last_start and end_date == last_end:
+            result["errors"].append(
+                f"❌ 日期范围完全相同！上次已经扣减过 {last_start} ~ {last_end} 的数据了"
+            )
+            result["ok"] = False
+            return result
+
+        # 2. 检查是否有重叠（部分重复）
+        d1_start = datetime.strptime(start_date, "%Y-%m-%d")
+        d1_end = datetime.strptime(end_date, "%Y-%m-%d")
+        d2_start = datetime.strptime(last_start, "%Y-%m-%d")
+        d2_end = datetime.strptime(last_end, "%Y-%m-%d")
+
+        overlap_start = max(d1_start, d2_start)
+        overlap_end = min(d1_end, d2_end)
+        if overlap_start <= overlap_end:
+            overlap_days = (overlap_end - overlap_start).days + 1
+            result["errors"].append(
+                f"❌ 日期范围有重叠！与上次扣减的 {last_start} ~ {last_end} 重叠了 {overlap_days} 天"
+            )
+            result["ok"] = False
+
+        # 3. 检查是否不连续（有遗漏）
+        expected_next_start = d2_end + timedelta(days=1)
+        if d1_start > expected_next_start:
+            missing_days = (d1_start - expected_next_start).days
+            result["warnings"].append(
+                f"⚠️  日期不连续！上次扣减到 {last_end}，本次从 {start_date} 开始，中间遗漏了 {missing_days} 天数据"
+            )
+
+        # 4. 检查是否倒退（时间早于上次）
+        if d1_end < d2_start:
+            result["errors"].append(
+                f"❌ 日期倒退！本次结束日期 {end_date} 早于上次开始日期 {last_start}"
+            )
+            result["ok"] = False
+
+        return result
+
+    def record_sales_deduction(self, start_date: str, end_date: str, days: int):
+        """记录本次销售扣减的日期范围"""
+        self.inventory["last_sales_deduction"] = {
+            "start_date": start_date,
+            "end_date": end_date,
+            "days": days,
+            "deducted_at": datetime.datetime.now().isoformat(),
+        }
+        self._save_inventory()
+        print(f"✅ 已记录本次扣减日期范围: {start_date} ~ {end_date} ({days} 天)")
+
+    def get_last_sales_deduction(self) -> Dict:
+        """获取上次销售扣减的信息"""
+        return self.inventory.get("last_sales_deduction")
+
     def print_inventory(self, category: str = None):
         """打印库存清单"""
         print("\n" + "=" * 70)
         print("📦 当前库存清单")
         print("=" * 70)
+
+        # 显示上次销售扣减信息
+        last_deduct = self.get_last_sales_deduction()
+        if last_deduct:
+            print(f"上次扣减: {last_deduct['start_date']} ~ {last_deduct['end_date']} ({last_deduct['days']} 天)")
+            print(f"扣减时间: {last_deduct['deducted_at'][:19]}")
+            print("-" * 70)
+        else:
+            print("还没有销售扣减记录")
+            print("-" * 70)
+
         print(f"{'SKU':<12} {'名称':<18} {'库存':>10} {'单位':<6} {'上次盘点':<12}")
         print("-" * 70)
 

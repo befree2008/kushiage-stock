@@ -91,6 +91,10 @@ def main():
     # 显示扣减后的库存
     if inv:
         inv.print_inventory()
+    else:
+        print("❌ 库存扣减失败或已取消")
+        pause()
+        return
 
     pause()
 

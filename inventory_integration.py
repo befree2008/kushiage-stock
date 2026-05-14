@@ -15,8 +15,11 @@ from inventory_manager import InventoryManager
 DATA = Path("data")
 
 
-def auto_deduct_from_sales():
-    """从 sku_sales_summary.csv 读取销售数据，自动扣减库存"""
+def auto_deduct_from_sales(force: bool = False):
+    """
+    从 sku_sales_summary.csv 读取销售数据，自动扣减库存
+    force=True: 即使有警告也强制扣减
+    """
     print("=" * 60)
     print("🔄 自动扣减销售库存")
     print("=" * 60)
@@ -25,15 +28,56 @@ def auto_deduct_from_sales():
     if not summary_file.exists():
         print(f"❌ 找不到销售汇总文件: {summary_file}")
         print("   请先运行: python3 summarize_by_sku.py")
-        return
+        return None
 
     inv = InventoryManager()
 
+    # 第一步：解析并校验日期范围
+    print("\n📅 步骤 1: 校验销售数据日期")
+    meta = inv.parse_sales_summary_metadata(summary_file)
+
+    if not meta["start_date"] or not meta["end_date"]:
+        print("❌ 销售汇总文件缺少日期元数据！")
+        print("   请确保 summarize_by_sku.py 里的 SALES_START_DATE 和 SALES_END_DATE 已正确设置")
+        return None
+
+    print(f"   本次数据: {meta['start_date']} ~ {meta['end_date']} ({meta['days']} 天)")
+
+    last = inv.get_last_sales_deduction()
+    if last:
+        print(f"   上次扣减: {last['start_date']} ~ {last['end_date']} ({last['days']} 天)")
+
+    # 执行校验
+    validation = inv.validate_sales_date_range(meta["start_date"], meta["end_date"])
+
+    if validation["errors"]:
+        print("\n❌ 发现严重问题，扣减已取消：")
+        for err in validation["errors"]:
+            print(f"   {err}")
+        print("\n   如果确认要强制扣减，请运行：python3 inventory_integration.py --force")
+        return None
+
+    if validation["warnings"]:
+        print("\n⚠️  注意事项：")
+        for warn in validation["warnings"]:
+            print(f"   {warn}")
+        if not force:
+            confirm = input("\n   确认要继续扣减吗？(yes/no): ").strip().lower()
+            if confirm != "yes":
+                print("\n❌ 已取消扣减")
+                return None
+
+    print("\n✅ 日期校验通过")
+
+    # 第二步：读取实际销售数据（跳过 # 开头的元数据行）
+    print("\n📊 步骤 2: 读取销售数据")
+
+    rows = []
     with open(summary_file, 'r', encoding='utf-8-sig') as f:
-        reader = csv.DictReader(f)
+        reader = csv.DictReader(row for row in f if not row.startswith("#"))
         rows = list(reader)
 
-    print(f"\n📊 共 {len(rows)} 个 SKU 有销售数据")
+    print(f"   共 {len(rows)} 个 SKU 有销售数据")
     print("\n开始扣减库存...\n")
 
     success_count = 0
@@ -43,8 +87,11 @@ def auto_deduct_from_sales():
 
         # 只有有销量的才扣减
         if qty_sold > 0:
-            if inv.deduct_sales(sku_id, qty_sold, f"40天销售消耗: {qty_sold:.2f}"):
+            if inv.deduct_sales(sku_id, qty_sold, f"销售消耗 {meta['start_date']}~{meta['end_date']}: {qty_sold:.2f}"):
                 success_count += 1
+
+    # 记录本次扣减日期
+    inv.record_sales_deduction(meta["start_date"], meta["end_date"], meta["days"])
 
     print(f"\n✅ 扣减完成: 成功 {success_count} 个 SKU")
     return inv
@@ -118,12 +165,15 @@ def process_purchase_plan():
 
 
 def main():
+    import sys
+    force = "--force" in sys.argv or "-f" in sys.argv
+
     print("\n" + "🍢" * 20)
     print("   炸串店库存管理一体化流程")
     print("🍢" * 20 + "\n")
 
     # 第一步：扣减销售库存
-    inv = auto_deduct_from_sales()
+    inv = auto_deduct_from_sales(force=force)
 
     if inv:
         # 显示扣减后的库存
