@@ -80,15 +80,33 @@ def auto_deduct_from_sales(force: bool = False):
     print(f"   共 {len(rows)} 个 SKU 有销售数据")
     print("\n开始扣减库存...\n")
 
+    # 蜂蜡 2026-05-17：蔡菜不走库存扣减（当天进货当天用，不调会出负数）
+    SKIP_CATEGORIES = {"蔬菜"}
     success_count = 0
+    skipped: list[str] = []
     for row in rows:
         sku_id = row["sku_id"]
-        qty_sold = float(row["40天消耗"])
+        category = row.get("category", "")
+        # 兼容新旧列名：优先读 "本期消耗"，其次 "40天消耗"
+        try:
+            qty_sold = float(row.get("本期消耗") or row.get("40天消耗") or 0)
+        except ValueError:
+            qty_sold = 0
 
-        # 只有有销量的才扣减
-        if qty_sold > 0:
-            if inv.deduct_sales(sku_id, qty_sold, f"销售消耗 {meta['start_date']}~{meta['end_date']}: {qty_sold:.2f}"):
-                success_count += 1
+        if qty_sold <= 0:
+            continue
+
+        if category in SKIP_CATEGORIES:
+            skipped.append(f"  - [{sku_id}] {row.get('sku_name','')} ({category}) 销量 {qty_sold:.0f}")
+            continue
+
+        if inv.deduct_sales(sku_id, qty_sold, f"销售消耗 {meta['start_date']}~{meta['end_date']}: {qty_sold:.2f}"):
+            success_count += 1
+
+    if skipped:
+        print(f"\n⏭️  已跳过不扣减库存的分类 ({', '.join(SKIP_CATEGORIES)})：")
+        for s in skipped:
+            print(s)
 
     # 记录本次扣减日期
     inv.record_sales_deduction(meta["start_date"], meta["end_date"], meta["days"])

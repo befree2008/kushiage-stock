@@ -177,9 +177,22 @@ def main():
     # ========== 同步写入 sku_sales_summary.csv（purchase_plan 读取） ==========
     summary_path = DATA / "sku_sales_summary.csv"
     if summary_path.exists():
-        # 读入现有 summary
+        # 读入现有 summary。先从文件头部的元数据读取本期天数，
+        # 代替旧脚本里硬编码的 40 天。
+        sales_days = 0
         with summary_path.open(encoding="utf-8-sig") as f:
-            reader = csv.DictReader(f)
+            for line in f:
+                if not line.startswith("#"):
+                    break
+                if "sales_days" in line:
+                    try:
+                        sales_days = int(line.strip().split(",")[1])
+                    except (IndexError, ValueError):
+                        pass
+        if sales_days <= 0:
+            print("⚠️  无法从 sku_sales_summary.csv 读到 sales_days，调料本期总量会被跳过")
+        with summary_path.open(encoding="utf-8-sig") as f:
+            reader = csv.DictReader(line for line in f if not line.startswith("#"))
             fields = reader.fieldnames
             rows = list(reader)
 
@@ -191,13 +204,13 @@ def main():
                 daily_g = sku_daily[sku_id]
                 r["日均消耗"] = f"{daily_g:.1f}"
                 r["周均消耗"] = f"{daily_g * 7:.1f}"
-                # 保留 40 天总量以供参考
-                r["40天消耗"] = f"{daily_g * 40:.0f}"
+                # 本期总量 = 日均 × 本期天数（从 summary 元数据读取）
+                r["本期消耗"] = f"{daily_g * sales_days:.0f}" if sales_days > 0 else ""
                 # 调料没有源自菜品的订单数，用口味总份数标记
                 src_taste_portions = sum(
                     p for _, p, _, dg in trace[sku_id] if dg > 0
                 )
-                r["40天订单数"] = f"{src_taste_portions * 40:.0f}"
+                r["本期订单数"] = f"{src_taste_portions * sales_days:.0f}" if sales_days > 0 else ""
                 r["Top平台"] = "(来自口味统计)"
                 r["平台数"] = "-"
                 updated += 1

@@ -125,8 +125,8 @@ for sku_id, info in skus.items():
         "sku_name": info["name"],
         "category": info["category"],
         "base_unit": info["base_unit"],
-        "40天订单数": round(a["orders"], 1),
-        "40天消耗": round(cons, 2),
+        "本期订单数": round(a["orders"], 1),
+        "本期消耗": round(cons, 2),
         "日均消耗": round(daily, 2),
         "周均消耗": round(weekly, 1),
         "Top平台": max(a["platforms"].items(), key=lambda x: x[1])[0] if a["platforms"] else "",
@@ -152,14 +152,14 @@ with out.open("w", encoding="utf-8-sig", newline="") as f:
 
 # ==== 打印报表 ====
 print("=" * 92)
-print(f"{'排名':<4}{'SKU':<8}{'名称':<16}{'分类':<6}{'40天订单':>9}{'40天消耗':>10}{'日均':>8}{'周均':>9} 单位")
+print(f"{'排名':<4}{'SKU':<8}{'名称':<16}{'分类':<6}{'本期订单':>9}{'本期消耗':>10}{'日均':>8}{'周均':>9} 单位")
 print("=" * 92)
 
 cat_totals = defaultdict(lambda: {"weekly": 0, "sku_count": 0, "sold_count": 0})
 for i, r in enumerate(rows, 1):
     mark = "  " if r["周均消耗"] > 0 else "💤"
     print(f"{i:<4}{r['sku_id']:<8}{r['sku_name']:<16}{r['category']:<6}"
-          f"{r['40天订单数']:>9.0f}{r['40天消耗']:>10.1f}{r['日均消耗']:>8.1f}{r['周均消耗']:>9.1f} {r['base_unit']} {mark}")
+          f"{r['本期订单数']:>9.0f}{r['本期消耗']:>10.1f}{r['日均消耗']:>8.1f}{r['周均消耗']:>9.1f} {r['base_unit']} {mark}")
     cat_totals[r["category"]]["weekly"] += r["周均消耗"] if r["base_unit"] == "串" else 0
     cat_totals[r["category"]]["sku_count"] += 1
     if r["周均消耗"] > 0:

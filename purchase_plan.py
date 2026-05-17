@@ -126,15 +126,30 @@ with (DATA / "sku_dictionary.csv").open(encoding="utf-8-sig") as f:
 
 
 # ============ 加载销售摘要（日均消耗） ============
+# 注意：sku_sales_summary.csv 顶部有 # 开头的元数据行，要跳过
 daily_use = {}
 for path in [DATA / "sku_sales_summary.csv"]:
     if not path.exists():
         continue
     with path.open(encoding="utf-8-sig") as f:
-        for r in csv.DictReader(f):
+        reader = csv.DictReader(line for line in f if not line.startswith("#"))
+        for r in reader:
             try:
                 daily_use[r["sku_id"]] = float(r["日均消耗"])
             except (KeyError, ValueError, TypeError):
+                pass
+
+# ============ 加载调料日均消耗（seasoning_calc.py 生成） ============
+seasoning_path = DATA / "seasoning_daily.csv"
+if seasoning_path.exists():
+    with seasoning_path.open(encoding="utf-8-sig") as f:
+        for r in csv.DictReader(f):
+            v = (r.get("日均消耗_g") or "").strip()
+            if not v:
+                continue
+            try:
+                daily_use[r["sku_id"]] = float(v)
+            except (ValueError, TypeError):
                 pass
 
 # ============ 加载包材日均消耗（手填） ============
