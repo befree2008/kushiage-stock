@@ -1,0 +1,4591 @@
+[
+  {
+    "timestamp": "2026-05-17T18:06:15.599898",
+    "action": "ADJUST",
+    "sku_id": "SKU036",
+    "quantity": -1906.8,
+    "reason": "实物盘点 2026-05-17（13袋）",
+    "before_quantity": 8406.8,
+    "after_quantity": 6500.0
+  },
+  {
+    "timestamp": "2026-05-17T18:06:15.593294",
+    "action": "ADJUST",
+    "sku_id": "SKU035",
+    "quantity": 2904.8,
+    "reason": "实物盘点 2026-05-17（14袋）",
+    "before_quantity": 4095.2,
+    "after_quantity": 7000.0
+  },
+  {
+    "timestamp": "2026-05-17T18:06:15.586775",
+    "action": "ADJUST",
+    "sku_id": "SKU034",
+    "quantity": 1238.6,
+    "reason": "实物盘点 2026-05-17（8袋）",
+    "before_quantity": 2761.4,
+    "after_quantity": 4000.0
+  },
+  {
+    "timestamp": "2026-05-17T18:06:15.580235",
+    "action": "ADJUST",
+    "sku_id": "SKU033",
+    "quantity": -1.25,
+    "reason": "实物盘点 2026-05-17（8袋）",
+    "before_quantity": 9.25,
+    "after_quantity": 8.0
+  },
+  {
+    "timestamp": "2026-05-17T18:06:15.573704",
+    "action": "ADJUST",
+    "sku_id": "SKU030",
+    "quantity": -84.0,
+    "reason": "实物盘点 2026-05-17（6袋）",
+    "before_quantity": 384.0,
+    "after_quantity": 300.0
+  },
+  {
+    "timestamp": "2026-05-17T18:06:15.567088",
+    "action": "ADJUST",
+    "sku_id": "SKU028",
+    "quantity": -32.0,
+    "reason": "实物盘点 2026-05-17（6袋）",
+    "before_quantity": 122.0,
+    "after_quantity": 90.0
+  },
+  {
+    "timestamp": "2026-05-17T18:06:15.560553",
+    "action": "ADJUST",
+    "sku_id": "SKU026",
+    "quantity": 67.0,
+    "reason": "实物盘点 2026-05-17（2袋）",
+    "before_quantity": 33.0,
+    "after_quantity": 100.0
+  },
+  {
+    "timestamp": "2026-05-17T18:06:15.554100",
+    "action": "ADJUST",
+    "sku_id": "SKU025",
+    "quantity": 24.0,
+    "reason": "实物盘点 2026-05-17（12袋）",
+    "before_quantity": 96.0,
+    "after_quantity": 120.0
+  },
+  {
+    "timestamp": "2026-05-17T18:06:15.547647",
+    "action": "ADJUST",
+    "sku_id": "SKU017",
+    "quantity": -28.0,
+    "reason": "实物盘点 2026-05-17（4袋）",
+    "before_quantity": 128.0,
+    "after_quantity": 100.0
+  },
+  {
+    "timestamp": "2026-05-17T18:06:15.541109",
+    "action": "ADJUST",
+    "sku_id": "SKU016",
+    "quantity": 37.0,
+    "reason": "实物盘点 2026-05-17（6袋）",
+    "before_quantity": 83.0,
+    "after_quantity": 120.0
+  },
+  {
+    "timestamp": "2026-05-17T18:06:15.534640",
+    "action": "ADJUST",
+    "sku_id": "SKU011",
+    "quantity": -54.0,
+    "reason": "实物盘点 2026-05-17（4袋）",
+    "before_quantity": 134.0,
+    "after_quantity": 80.0
+  },
+  {
+    "timestamp": "2026-05-17T18:06:15.528163",
+    "action": "ADJUST",
+    "sku_id": "SKU009",
+    "quantity": -620.0,
+    "reason": "实物盘点 2026-05-17（8袋）",
+    "before_quantity": 3020.0,
+    "after_quantity": 2400.0
+  },
+  {
+    "timestamp": "2026-05-17T18:06:15.521502",
+    "action": "ADJUST",
+    "sku_id": "SKU006",
+    "quantity": 160.0,
+    "reason": "实物盘点 2026-05-17（2袋）",
+    "before_quantity": 40.0,
+    "after_quantity": 200.0
+  },
+  {
+    "timestamp": "2026-05-17T18:06:15.514789",
+    "action": "ADJUST",
+    "sku_id": "SKU005",
+    "quantity": 140.0,
+    "reason": "实物盘点 2026-05-17（7袋）",
+    "before_quantity": 560.0,
+    "after_quantity": 700.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.486011",
+    "action": "DEDUCT",
+    "sku_id": "SKU056",
+    "quantity": 30.0,
+    "reason": "[包材] 包材消耗: 30.00 (日均5.0 × 6天) (2026-05-11~2026-05-16)",
+    "before_quantity": 250.0,
+    "after_quantity": 220.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.479594",
+    "action": "DEDUCT",
+    "sku_id": "SKU055",
+    "quantity": 360.0,
+    "reason": "[包材] 包材消耗: 360.00 (日均60.0 × 6天) (2026-05-11~2026-05-16)",
+    "before_quantity": 2000.0,
+    "after_quantity": 1640.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.473142",
+    "action": "DEDUCT",
+    "sku_id": "SKU054",
+    "quantity": 360.0,
+    "reason": "[包材] 包材消耗: 360.00 (日均60.0 × 6天) (2026-05-11~2026-05-16)",
+    "before_quantity": 500.0,
+    "after_quantity": 140.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.466757",
+    "action": "DEDUCT",
+    "sku_id": "SKU053",
+    "quantity": 6.0,
+    "reason": "[包材] 包材消耗: 6.00 (日均1.0 × 6天) (2026-05-11~2026-05-16)",
+    "before_quantity": 100.0,
+    "after_quantity": 94.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.460378",
+    "action": "DEDUCT",
+    "sku_id": "SKU052",
+    "quantity": 150.0,
+    "reason": "[包材] 包材消耗: 150.00 (日均25.0 × 6天) (2026-05-11~2026-05-16)",
+    "before_quantity": 500.0,
+    "after_quantity": 350.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.453977",
+    "action": "DEDUCT",
+    "sku_id": "SKU051",
+    "quantity": 30.0,
+    "reason": "[包材] 包材消耗: 30.00 (日均5.0 × 6天) (2026-05-11~2026-05-16)",
+    "before_quantity": 1000.0,
+    "after_quantity": 970.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.447559",
+    "action": "DEDUCT",
+    "sku_id": "SKU050",
+    "quantity": 30.0,
+    "reason": "[包材] 包材消耗: 30.00 (日均5.0 × 6天) (2026-05-11~2026-05-16)",
+    "before_quantity": 150.0,
+    "after_quantity": 120.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.441212",
+    "action": "DEDUCT",
+    "sku_id": "SKU049",
+    "quantity": 30.0,
+    "reason": "[包材] 包材消耗: 30.00 (日均5.0 × 6天) (2026-05-11~2026-05-16)",
+    "before_quantity": 150.0,
+    "after_quantity": 120.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.434918",
+    "action": "DEDUCT",
+    "sku_id": "SKU048",
+    "quantity": 60.0,
+    "reason": "[包材] 包材消耗: 60.00 (日均10.0 × 6天) (2026-05-11~2026-05-16)",
+    "before_quantity": 600.0,
+    "after_quantity": 540.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.428595",
+    "action": "DEDUCT",
+    "sku_id": "SKU047",
+    "quantity": 60.0,
+    "reason": "[包材] 包材消耗: 60.00 (日均10.0 × 6天) (2026-05-11~2026-05-16)",
+    "before_quantity": 300.0,
+    "after_quantity": 240.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.422143",
+    "action": "DEDUCT",
+    "sku_id": "SKU046",
+    "quantity": 60.0,
+    "reason": "[包材] 包材消耗: 60.00 (日均10.0 × 6天) (2026-05-11~2026-05-16)",
+    "before_quantity": 1000.0,
+    "after_quantity": 940.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.415828",
+    "action": "DEDUCT",
+    "sku_id": "SKU045",
+    "quantity": 90.0,
+    "reason": "[包材] 包材消耗: 90.00 (日均15.0 × 6天) (2026-05-11~2026-05-16)",
+    "before_quantity": 500.0,
+    "after_quantity": 410.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.409557",
+    "action": "DEDUCT",
+    "sku_id": "SKU044",
+    "quantity": 150.0,
+    "reason": "[包材] 包材消耗: 150.00 (日均25.0 × 6天) (2026-05-11~2026-05-16)",
+    "before_quantity": 500.0,
+    "after_quantity": 350.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.403319",
+    "action": "DEDUCT",
+    "sku_id": "SKU043",
+    "quantity": 120.0,
+    "reason": "[包材] 包材消耗: 120.00 (日均20.0 × 6天) (2026-05-11~2026-05-16)",
+    "before_quantity": 650.0,
+    "after_quantity": 530.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.397082",
+    "action": "DEDUCT",
+    "sku_id": "SKU042",
+    "quantity": 270.0,
+    "reason": "[包材] 包材消耗: 270.00 (日均45.0 × 6天) (2026-05-11~2026-05-16)",
+    "before_quantity": 500.0,
+    "after_quantity": 230.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.390838",
+    "action": "DEDUCT",
+    "sku_id": "SKU041",
+    "quantity": 152.39999999999998,
+    "reason": "[调料] 调料消耗: 152.40 (日均25.4 × 6天) (2026-05-11~2026-05-16)",
+    "before_quantity": 5000.0,
+    "after_quantity": 4847.6
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.384565",
+    "action": "DEDUCT",
+    "sku_id": "SKU038",
+    "quantity": 483.0,
+    "reason": "[调料] 调料消耗: 483.00 (日均80.5 × 6天) (2026-05-11~2026-05-16)",
+    "before_quantity": 1500.0,
+    "after_quantity": 1017.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.378317",
+    "action": "DEDUCT",
+    "sku_id": "SKU037",
+    "quantity": 738.5999999999999,
+    "reason": "[调料] 调料消耗: 738.60 (日均123.1 × 6天) (2026-05-11~2026-05-16)",
+    "before_quantity": 5000.0,
+    "after_quantity": 4261.4
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.372069",
+    "action": "DEDUCT",
+    "sku_id": "SKU035",
+    "quantity": 904.8000000000001,
+    "reason": "[调料] 调料消耗: 904.80 (日均150.8 × 6天) (2026-05-11~2026-05-16)",
+    "before_quantity": 5000.0,
+    "after_quantity": 4095.2
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.365892",
+    "action": "DEDUCT",
+    "sku_id": "SKU039",
+    "quantity": 1332.0,
+    "reason": "[调料] 调料消耗: 1332.00 (日均222.0 × 6天) (2026-05-11~2026-05-16)",
+    "before_quantity": 14500.0,
+    "after_quantity": 13168.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.359648",
+    "action": "DEDUCT",
+    "sku_id": "SKU040",
+    "quantity": 1666.8000000000002,
+    "reason": "[调料] 调料消耗: 1666.80 (日均277.8 × 6天) (2026-05-11~2026-05-16)",
+    "before_quantity": 5000.0,
+    "after_quantity": 3333.2
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.353398",
+    "action": "DEDUCT",
+    "sku_id": "SKU034",
+    "quantity": 2238.6000000000004,
+    "reason": "[调料] 调料消耗: 2238.60 (日均373.1 × 6天) (2026-05-11~2026-05-16)",
+    "before_quantity": 5000.0,
+    "after_quantity": 2761.4
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.347074",
+    "action": "DEDUCT",
+    "sku_id": "SKU036",
+    "quantity": 2593.2,
+    "reason": "[调料] 调料消耗: 2593.20 (日均432.2 × 6天) (2026-05-11~2026-05-16)",
+    "before_quantity": 11000.0,
+    "after_quantity": 8406.8
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.340948",
+    "action": "DEDUCT",
+    "sku_id": "SKU032",
+    "quantity": 1.8,
+    "reason": "[销售] 销售消耗: 1.80 (2026-05-11~2026-05-16)",
+    "before_quantity": 4.0,
+    "after_quantity": 2.2
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.334837",
+    "action": "DEDUCT",
+    "sku_id": "SKU033",
+    "quantity": 3.75,
+    "reason": "[销售] 销售消耗: 3.75 (2026-05-11~2026-05-16)",
+    "before_quantity": 13.0,
+    "after_quantity": 9.25
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.328698",
+    "action": "DEDUCT",
+    "sku_id": "SKU031",
+    "quantity": 8.0,
+    "reason": "[销售] 销售消耗: 8.00 (2026-05-11~2026-05-16)",
+    "before_quantity": 17.5,
+    "after_quantity": 9.5
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.322602",
+    "action": "DEDUCT",
+    "sku_id": "SKU022",
+    "quantity": 10.0,
+    "reason": "[销售] 销售消耗: 10.00 (2026-05-11~2026-05-16)",
+    "before_quantity": 35.0,
+    "after_quantity": 25.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.316436",
+    "action": "DEDUCT",
+    "sku_id": "SKU028",
+    "quantity": 13.0,
+    "reason": "[销售] 销售消耗: 13.00 (2026-05-11~2026-05-16)",
+    "before_quantity": 135.0,
+    "after_quantity": 122.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.310360",
+    "action": "DEDUCT",
+    "sku_id": "SKU025",
+    "quantity": 14.0,
+    "reason": "[销售] 销售消耗: 14.00 (2026-05-11~2026-05-16)",
+    "before_quantity": 110.0,
+    "after_quantity": 96.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.304244",
+    "action": "DEDUCT",
+    "sku_id": "SKU023",
+    "quantity": 15.0,
+    "reason": "[销售] 销售消耗: 15.00 (2026-05-11~2026-05-16)",
+    "before_quantity": 85.0,
+    "after_quantity": 70.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.298188",
+    "action": "DEDUCT",
+    "sku_id": "SKU016",
+    "quantity": 17.0,
+    "reason": "[销售] 销售消耗: 17.00 (2026-05-11~2026-05-16)",
+    "before_quantity": 100.0,
+    "after_quantity": 83.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.292127",
+    "action": "DEDUCT",
+    "sku_id": "SKU024",
+    "quantity": 24.0,
+    "reason": "[销售] 销售消耗: 24.00 (2026-05-11~2026-05-16)",
+    "before_quantity": 104.0,
+    "after_quantity": 80.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.286076",
+    "action": "DEDUCT",
+    "sku_id": "SKU021",
+    "quantity": 34.0,
+    "reason": "[销售] 销售消耗: 34.00 (2026-05-11~2026-05-16)",
+    "before_quantity": 180.0,
+    "after_quantity": 146.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.280061",
+    "action": "DEDUCT",
+    "sku_id": "SKU020",
+    "quantity": 35.0,
+    "reason": "[销售] 销售消耗: 35.00 (2026-05-11~2026-05-16)",
+    "before_quantity": 40.0,
+    "after_quantity": 5.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.273948",
+    "action": "DEDUCT",
+    "sku_id": "SKU017",
+    "quantity": 47.0,
+    "reason": "[销售] 销售消耗: 47.00 (2026-05-11~2026-05-16)",
+    "before_quantity": 175.0,
+    "after_quantity": 128.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.267970",
+    "action": "DEDUCT",
+    "sku_id": "SKU014",
+    "quantity": 51.0,
+    "reason": "[销售] 销售消耗: 51.00 (2026-05-11~2026-05-16)",
+    "before_quantity": 240.0,
+    "after_quantity": 189.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.261972",
+    "action": "DEDUCT",
+    "sku_id": "SKU015",
+    "quantity": 71.0,
+    "reason": "[销售] 销售消耗: 71.00 (2026-05-11~2026-05-16)",
+    "before_quantity": 340.0,
+    "after_quantity": 269.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.255983",
+    "action": "DEDUCT",
+    "sku_id": "SKU012",
+    "quantity": 71.0,
+    "reason": "[销售] 销售消耗: 71.00 (2026-05-11~2026-05-16)",
+    "before_quantity": 150.0,
+    "after_quantity": 79.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.250045",
+    "action": "DEDUCT",
+    "sku_id": "SKU019",
+    "quantity": 86.0,
+    "reason": "[销售] 销售消耗: 86.00 (2026-05-11~2026-05-16)",
+    "before_quantity": 160.0,
+    "after_quantity": 74.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.244081",
+    "action": "DEDUCT",
+    "sku_id": "SKU011",
+    "quantity": 86.0,
+    "reason": "[销售] 销售消耗: 86.00 (2026-05-11~2026-05-16)",
+    "before_quantity": 220.0,
+    "after_quantity": 134.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.238128",
+    "action": "DEDUCT",
+    "sku_id": "SKU013",
+    "quantity": 87.0,
+    "reason": "[销售] 销售消耗: 87.00 (2026-05-11~2026-05-16)",
+    "before_quantity": 300.0,
+    "after_quantity": 213.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.232142",
+    "action": "DEDUCT",
+    "sku_id": "SKU003",
+    "quantity": 105.0,
+    "reason": "[销售] 销售消耗: 105.00 (2026-05-11~2026-05-16)",
+    "before_quantity": 250.0,
+    "after_quantity": 145.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.226124",
+    "action": "DEDUCT",
+    "sku_id": "SKU029",
+    "quantity": 117.0,
+    "reason": "[销售] 销售消耗: 117.00 (2026-05-11~2026-05-16)",
+    "before_quantity": 120.0,
+    "after_quantity": 3.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.220155",
+    "action": "DEDUCT",
+    "sku_id": "SKU006",
+    "quantity": 160.0,
+    "reason": "[销售] 销售消耗: 160.00 (2026-05-11~2026-05-16)",
+    "before_quantity": 200.0,
+    "after_quantity": 40.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.214208",
+    "action": "DEDUCT",
+    "sku_id": "SKU030",
+    "quantity": 166.0,
+    "reason": "[销售] 销售消耗: 166.00 (2026-05-11~2026-05-16)",
+    "before_quantity": 550.0,
+    "after_quantity": 384.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.208286",
+    "action": "DEDUCT",
+    "sku_id": "SKU026",
+    "quantity": 167.0,
+    "reason": "[销售] 销售消耗: 167.00 (2026-05-11~2026-05-16)",
+    "before_quantity": 200.0,
+    "after_quantity": 33.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.202323",
+    "action": "DEDUCT",
+    "sku_id": "SKU018",
+    "quantity": 171.0,
+    "reason": "[销售] 销售消耗: 171.00 (2026-05-11~2026-05-16)",
+    "before_quantity": 220.0,
+    "after_quantity": 49.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.196450",
+    "action": "DEDUCT",
+    "sku_id": "SKU001",
+    "quantity": 195.0,
+    "reason": "[销售] 销售消耗: 195.00 (2026-05-11~2026-05-16)",
+    "before_quantity": 2000.0,
+    "after_quantity": 1805.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.190565",
+    "action": "DEDUCT",
+    "sku_id": "SKU008",
+    "quantity": 235.0,
+    "reason": "[销售] 销售消耗: 235.00 (2026-05-11~2026-05-16)",
+    "before_quantity": 600.0,
+    "after_quantity": 365.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.184740",
+    "action": "DEDUCT",
+    "sku_id": "SKU010",
+    "quantity": 240.0,
+    "reason": "[销售] 销售消耗: 240.00 (2026-05-11~2026-05-16)",
+    "before_quantity": 1200.0,
+    "after_quantity": 960.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.178897",
+    "action": "DEDUCT",
+    "sku_id": "SKU002",
+    "quantity": 317.0,
+    "reason": "[销售] 销售消耗: 317.00 (2026-05-11~2026-05-16)",
+    "before_quantity": 450.0,
+    "after_quantity": 133.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.172998",
+    "action": "DEDUCT",
+    "sku_id": "SKU004",
+    "quantity": 360.0,
+    "reason": "[销售] 销售消耗: 360.00 (2026-05-11~2026-05-16)",
+    "before_quantity": 1600.0,
+    "after_quantity": 1240.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.167134",
+    "action": "DEDUCT",
+    "sku_id": "SKU005",
+    "quantity": 540.0,
+    "reason": "[销售] 销售消耗: 540.00 (2026-05-11~2026-05-16)",
+    "before_quantity": 1100.0,
+    "after_quantity": 560.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.161266",
+    "action": "DEDUCT",
+    "sku_id": "SKU007",
+    "quantity": 670.0,
+    "reason": "[销售] 销售消耗: 670.00 (2026-05-11~2026-05-16)",
+    "before_quantity": 5700.0,
+    "after_quantity": 5030.0
+  },
+  {
+    "timestamp": "2026-05-17T17:11:15.155368",
+    "action": "DEDUCT",
+    "sku_id": "SKU009",
+    "quantity": 1480.0,
+    "reason": "[销售] 销售消耗: 1480.00 (2026-05-11~2026-05-16)",
+    "before_quantity": 4500.0,
+    "after_quantity": 3020.0
+  },
+  {
+    "timestamp": "2026-05-17T15:26:03.171057",
+    "action": "DEDUCT",
+    "sku_id": "SKU056",
+    "quantity": 30.0,
+    "reason": "包材消耗 2026-05-11~2026-05-16: 30.00 (日均5.0 × 6天)",
+    "before_quantity": 250.0,
+    "after_quantity": 220.0
+  },
+  {
+    "timestamp": "2026-05-17T15:26:03.165494",
+    "action": "DEDUCT",
+    "sku_id": "SKU055",
+    "quantity": 360.0,
+    "reason": "包材消耗 2026-05-11~2026-05-16: 360.00 (日均60.0 × 6天)",
+    "before_quantity": 2000.0,
+    "after_quantity": 1640.0
+  },
+  {
+    "timestamp": "2026-05-17T15:26:03.160025",
+    "action": "DEDUCT",
+    "sku_id": "SKU054",
+    "quantity": 360.0,
+    "reason": "包材消耗 2026-05-11~2026-05-16: 360.00 (日均60.0 × 6天)",
+    "before_quantity": 500.0,
+    "after_quantity": 140.0
+  },
+  {
+    "timestamp": "2026-05-17T15:26:03.154504",
+    "action": "DEDUCT",
+    "sku_id": "SKU053",
+    "quantity": 6.0,
+    "reason": "包材消耗 2026-05-11~2026-05-16: 6.00 (日均1.0 × 6天)",
+    "before_quantity": 100.0,
+    "after_quantity": 94.0
+  },
+  {
+    "timestamp": "2026-05-17T15:26:03.149027",
+    "action": "DEDUCT",
+    "sku_id": "SKU052",
+    "quantity": 150.0,
+    "reason": "包材消耗 2026-05-11~2026-05-16: 150.00 (日均25.0 × 6天)",
+    "before_quantity": 500.0,
+    "after_quantity": 350.0
+  },
+  {
+    "timestamp": "2026-05-17T15:26:03.143536",
+    "action": "DEDUCT",
+    "sku_id": "SKU051",
+    "quantity": 30.0,
+    "reason": "包材消耗 2026-05-11~2026-05-16: 30.00 (日均5.0 × 6天)",
+    "before_quantity": 1000.0,
+    "after_quantity": 970.0
+  },
+  {
+    "timestamp": "2026-05-17T15:26:03.138101",
+    "action": "DEDUCT",
+    "sku_id": "SKU050",
+    "quantity": 30.0,
+    "reason": "包材消耗 2026-05-11~2026-05-16: 30.00 (日均5.0 × 6天)",
+    "before_quantity": 150.0,
+    "after_quantity": 120.0
+  },
+  {
+    "timestamp": "2026-05-17T15:26:03.132636",
+    "action": "DEDUCT",
+    "sku_id": "SKU049",
+    "quantity": 30.0,
+    "reason": "包材消耗 2026-05-11~2026-05-16: 30.00 (日均5.0 × 6天)",
+    "before_quantity": 150.0,
+    "after_quantity": 120.0
+  },
+  {
+    "timestamp": "2026-05-17T15:26:03.127184",
+    "action": "DEDUCT",
+    "sku_id": "SKU048",
+    "quantity": 60.0,
+    "reason": "包材消耗 2026-05-11~2026-05-16: 60.00 (日均10.0 × 6天)",
+    "before_quantity": 600.0,
+    "after_quantity": 540.0
+  },
+  {
+    "timestamp": "2026-05-17T15:26:03.121757",
+    "action": "DEDUCT",
+    "sku_id": "SKU047",
+    "quantity": 60.0,
+    "reason": "包材消耗 2026-05-11~2026-05-16: 60.00 (日均10.0 × 6天)",
+    "before_quantity": 300.0,
+    "after_quantity": 240.0
+  },
+  {
+    "timestamp": "2026-05-17T15:26:03.116378",
+    "action": "DEDUCT",
+    "sku_id": "SKU046",
+    "quantity": 60.0,
+    "reason": "包材消耗 2026-05-11~2026-05-16: 60.00 (日均10.0 × 6天)",
+    "before_quantity": 1000.0,
+    "after_quantity": 940.0
+  },
+  {
+    "timestamp": "2026-05-17T15:26:03.111006",
+    "action": "DEDUCT",
+    "sku_id": "SKU045",
+    "quantity": 90.0,
+    "reason": "包材消耗 2026-05-11~2026-05-16: 90.00 (日均15.0 × 6天)",
+    "before_quantity": 500.0,
+    "after_quantity": 410.0
+  },
+  {
+    "timestamp": "2026-05-17T15:26:03.105510",
+    "action": "DEDUCT",
+    "sku_id": "SKU044",
+    "quantity": 150.0,
+    "reason": "包材消耗 2026-05-11~2026-05-16: 150.00 (日均25.0 × 6天)",
+    "before_quantity": 500.0,
+    "after_quantity": 350.0
+  },
+  {
+    "timestamp": "2026-05-17T15:26:03.100123",
+    "action": "DEDUCT",
+    "sku_id": "SKU043",
+    "quantity": 120.0,
+    "reason": "包材消耗 2026-05-11~2026-05-16: 120.00 (日均20.0 × 6天)",
+    "before_quantity": 750.0,
+    "after_quantity": 630.0
+  },
+  {
+    "timestamp": "2026-05-17T15:26:03.094754",
+    "action": "DEDUCT",
+    "sku_id": "SKU042",
+    "quantity": 270.0,
+    "reason": "包材消耗 2026-05-11~2026-05-16: 270.00 (日均45.0 × 6天)",
+    "before_quantity": 500.0,
+    "after_quantity": 230.0
+  },
+  {
+    "timestamp": "2026-05-17T15:26:03.089410",
+    "action": "DEDUCT",
+    "sku_id": "SKU041",
+    "quantity": 152.39999999999998,
+    "reason": "调料消耗 2026-05-11~2026-05-16: 152.40 (日均25.4 × 6天)",
+    "before_quantity": 5000.0,
+    "after_quantity": 4847.6
+  },
+  {
+    "timestamp": "2026-05-17T15:26:03.084094",
+    "action": "DEDUCT",
+    "sku_id": "SKU038",
+    "quantity": 483.0,
+    "reason": "调料消耗 2026-05-11~2026-05-16: 483.00 (日均80.5 × 6天)",
+    "before_quantity": 1500.0,
+    "after_quantity": 1017.0
+  },
+  {
+    "timestamp": "2026-05-17T15:26:03.078810",
+    "action": "DEDUCT",
+    "sku_id": "SKU037",
+    "quantity": 738.5999999999999,
+    "reason": "调料消耗 2026-05-11~2026-05-16: 738.60 (日均123.1 × 6天)",
+    "before_quantity": 1500.0,
+    "after_quantity": 761.4
+  },
+  {
+    "timestamp": "2026-05-17T15:26:03.073538",
+    "action": "DEDUCT",
+    "sku_id": "SKU035",
+    "quantity": 904.8000000000001,
+    "reason": "调料消耗 2026-05-11~2026-05-16: 904.80 (日均150.8 × 6天)",
+    "before_quantity": 5000.0,
+    "after_quantity": 4095.2
+  },
+  {
+    "timestamp": "2026-05-17T15:26:03.068279",
+    "action": "DEDUCT",
+    "sku_id": "SKU039",
+    "quantity": 1332.0,
+    "reason": "调料消耗 2026-05-11~2026-05-16: 1332.00 (日均222.0 × 6天)",
+    "before_quantity": 20000.0,
+    "after_quantity": 18668.0
+  },
+  {
+    "timestamp": "2026-05-17T15:26:03.063053",
+    "action": "DEDUCT",
+    "sku_id": "SKU040",
+    "quantity": 1666.8000000000002,
+    "reason": "调料消耗 2026-05-11~2026-05-16: 1666.80 (日均277.8 × 6天)",
+    "before_quantity": 7500.0,
+    "after_quantity": 5833.2
+  },
+  {
+    "timestamp": "2026-05-17T15:26:03.057758",
+    "action": "DEDUCT",
+    "sku_id": "SKU034",
+    "quantity": 2238.6000000000004,
+    "reason": "调料消耗 2026-05-11~2026-05-16: 2238.60 (日均373.1 × 6天)",
+    "before_quantity": 5000.0,
+    "after_quantity": 2761.4
+  },
+  {
+    "timestamp": "2026-05-17T15:26:03.052395",
+    "action": "DEDUCT",
+    "sku_id": "SKU036",
+    "quantity": 2593.2,
+    "reason": "调料消耗 2026-05-11~2026-05-16: 2593.20 (日均432.2 × 6天)",
+    "before_quantity": 11000.0,
+    "after_quantity": 8406.8
+  },
+  {
+    "timestamp": "2026-05-17T15:13:46.421001",
+    "action": "DEDUCT",
+    "sku_id": "SKU032",
+    "quantity": 1.8,
+    "reason": "销售消耗 2026-05-11~2026-05-16: 1.80",
+    "before_quantity": 4.0,
+    "after_quantity": 2.2
+  },
+  {
+    "timestamp": "2026-05-17T15:13:46.415617",
+    "action": "DEDUCT",
+    "sku_id": "SKU033",
+    "quantity": 3.75,
+    "reason": "销售消耗 2026-05-11~2026-05-16: 3.75",
+    "before_quantity": 11.0,
+    "after_quantity": 7.25
+  },
+  {
+    "timestamp": "2026-05-17T15:13:46.410429",
+    "action": "DEDUCT",
+    "sku_id": "SKU031",
+    "quantity": 8.0,
+    "reason": "销售消耗 2026-05-11~2026-05-16: 8.00",
+    "before_quantity": 22.5,
+    "after_quantity": 14.5
+  },
+  {
+    "timestamp": "2026-05-17T15:13:46.405289",
+    "action": "DEDUCT",
+    "sku_id": "SKU022",
+    "quantity": 10.0,
+    "reason": "销售消耗 2026-05-11~2026-05-16: 10.00",
+    "before_quantity": 35.0,
+    "after_quantity": 25.0
+  },
+  {
+    "timestamp": "2026-05-17T15:13:46.400143",
+    "action": "DEDUCT",
+    "sku_id": "SKU028",
+    "quantity": 13.0,
+    "reason": "销售消耗 2026-05-11~2026-05-16: 13.00",
+    "before_quantity": 135.0,
+    "after_quantity": 122.0
+  },
+  {
+    "timestamp": "2026-05-17T15:13:46.394958",
+    "action": "DEDUCT",
+    "sku_id": "SKU025",
+    "quantity": 14.0,
+    "reason": "销售消耗 2026-05-11~2026-05-16: 14.00",
+    "before_quantity": 110.0,
+    "after_quantity": 96.0
+  },
+  {
+    "timestamp": "2026-05-17T15:13:46.389858",
+    "action": "DEDUCT",
+    "sku_id": "SKU023",
+    "quantity": 15.0,
+    "reason": "销售消耗 2026-05-11~2026-05-16: 15.00",
+    "before_quantity": 85.0,
+    "after_quantity": 70.0
+  },
+  {
+    "timestamp": "2026-05-17T15:13:46.384732",
+    "action": "DEDUCT",
+    "sku_id": "SKU016",
+    "quantity": 17.0,
+    "reason": "销售消耗 2026-05-11~2026-05-16: 17.00",
+    "before_quantity": 100.0,
+    "after_quantity": 83.0
+  },
+  {
+    "timestamp": "2026-05-17T15:13:46.379618",
+    "action": "DEDUCT",
+    "sku_id": "SKU024",
+    "quantity": 24.0,
+    "reason": "销售消耗 2026-05-11~2026-05-16: 24.00",
+    "before_quantity": 104.0,
+    "after_quantity": 80.0
+  },
+  {
+    "timestamp": "2026-05-17T15:13:46.374477",
+    "action": "DEDUCT",
+    "sku_id": "SKU021",
+    "quantity": 34.0,
+    "reason": "销售消耗 2026-05-11~2026-05-16: 34.00",
+    "before_quantity": 180.0,
+    "after_quantity": 146.0
+  },
+  {
+    "timestamp": "2026-05-17T15:13:46.369399",
+    "action": "DEDUCT",
+    "sku_id": "SKU020",
+    "quantity": 35.0,
+    "reason": "销售消耗 2026-05-11~2026-05-16: 35.00",
+    "before_quantity": 40.0,
+    "after_quantity": 5.0
+  },
+  {
+    "timestamp": "2026-05-17T15:13:46.364336",
+    "action": "DEDUCT",
+    "sku_id": "SKU017",
+    "quantity": 47.0,
+    "reason": "销售消耗 2026-05-11~2026-05-16: 47.00",
+    "before_quantity": 175.0,
+    "after_quantity": 128.0
+  },
+  {
+    "timestamp": "2026-05-17T15:13:46.359127",
+    "action": "DEDUCT",
+    "sku_id": "SKU014",
+    "quantity": 51.0,
+    "reason": "销售消耗 2026-05-11~2026-05-16: 51.00",
+    "before_quantity": 240.0,
+    "after_quantity": 189.0
+  },
+  {
+    "timestamp": "2026-05-17T15:13:46.354074",
+    "action": "DEDUCT",
+    "sku_id": "SKU015",
+    "quantity": 71.0,
+    "reason": "销售消耗 2026-05-11~2026-05-16: 71.00",
+    "before_quantity": 340.0,
+    "after_quantity": 269.0
+  },
+  {
+    "timestamp": "2026-05-17T15:13:46.349036",
+    "action": "DEDUCT",
+    "sku_id": "SKU012",
+    "quantity": 71.0,
+    "reason": "销售消耗 2026-05-11~2026-05-16: 71.00",
+    "before_quantity": 150.0,
+    "after_quantity": 79.0
+  },
+  {
+    "timestamp": "2026-05-17T15:13:46.343997",
+    "action": "DEDUCT",
+    "sku_id": "SKU019",
+    "quantity": 86.0,
+    "reason": "销售消耗 2026-05-11~2026-05-16: 86.00",
+    "before_quantity": 160.0,
+    "after_quantity": 74.0
+  },
+  {
+    "timestamp": "2026-05-17T15:13:46.338900",
+    "action": "DEDUCT",
+    "sku_id": "SKU011",
+    "quantity": 86.0,
+    "reason": "销售消耗 2026-05-11~2026-05-16: 86.00",
+    "before_quantity": 220.0,
+    "after_quantity": 134.0
+  },
+  {
+    "timestamp": "2026-05-17T15:13:46.333876",
+    "action": "DEDUCT",
+    "sku_id": "SKU013",
+    "quantity": 87.0,
+    "reason": "销售消耗 2026-05-11~2026-05-16: 87.00",
+    "before_quantity": 300.0,
+    "after_quantity": 213.0
+  },
+  {
+    "timestamp": "2026-05-17T15:13:46.328906",
+    "action": "DEDUCT",
+    "sku_id": "SKU003",
+    "quantity": 105.0,
+    "reason": "销售消耗 2026-05-11~2026-05-16: 105.00",
+    "before_quantity": 250.0,
+    "after_quantity": 145.0
+  },
+  {
+    "timestamp": "2026-05-17T15:13:46.323896",
+    "action": "DEDUCT",
+    "sku_id": "SKU029",
+    "quantity": 117.0,
+    "reason": "销售消耗 2026-05-11~2026-05-16: 117.00",
+    "before_quantity": 120.0,
+    "after_quantity": 3.0
+  },
+  {
+    "timestamp": "2026-05-17T15:13:46.318929",
+    "action": "DEDUCT",
+    "sku_id": "SKU006",
+    "quantity": 160.0,
+    "reason": "销售消耗 2026-05-11~2026-05-16: 160.00",
+    "before_quantity": 200.0,
+    "after_quantity": 40.0
+  },
+  {
+    "timestamp": "2026-05-17T15:13:46.313929",
+    "action": "DEDUCT",
+    "sku_id": "SKU030",
+    "quantity": 166.0,
+    "reason": "销售消耗 2026-05-11~2026-05-16: 166.00",
+    "before_quantity": 550.0,
+    "after_quantity": 384.0
+  },
+  {
+    "timestamp": "2026-05-17T15:13:46.308922",
+    "action": "DEDUCT",
+    "sku_id": "SKU026",
+    "quantity": 167.0,
+    "reason": "销售消耗 2026-05-11~2026-05-16: 167.00",
+    "before_quantity": 200.0,
+    "after_quantity": 33.0
+  },
+  {
+    "timestamp": "2026-05-17T15:13:46.303928",
+    "action": "DEDUCT",
+    "sku_id": "SKU018",
+    "quantity": 171.0,
+    "reason": "销售消耗 2026-05-11~2026-05-16: 171.00",
+    "before_quantity": 220.0,
+    "after_quantity": 49.0
+  },
+  {
+    "timestamp": "2026-05-17T15:13:46.298857",
+    "action": "DEDUCT",
+    "sku_id": "SKU001",
+    "quantity": 195.0,
+    "reason": "销售消耗 2026-05-11~2026-05-16: 195.00",
+    "before_quantity": 2000.0,
+    "after_quantity": 1805.0
+  },
+  {
+    "timestamp": "2026-05-17T15:13:46.293897",
+    "action": "DEDUCT",
+    "sku_id": "SKU008",
+    "quantity": 235.0,
+    "reason": "销售消耗 2026-05-11~2026-05-16: 235.00",
+    "before_quantity": 600.0,
+    "after_quantity": 365.0
+  },
+  {
+    "timestamp": "2026-05-17T15:13:46.289010",
+    "action": "DEDUCT",
+    "sku_id": "SKU010",
+    "quantity": 240.0,
+    "reason": "销售消耗 2026-05-11~2026-05-16: 240.00",
+    "before_quantity": 1200.0,
+    "after_quantity": 960.0
+  },
+  {
+    "timestamp": "2026-05-17T15:13:46.284110",
+    "action": "DEDUCT",
+    "sku_id": "SKU002",
+    "quantity": 317.0,
+    "reason": "销售消耗 2026-05-11~2026-05-16: 317.00",
+    "before_quantity": 450.0,
+    "after_quantity": 133.0
+  },
+  {
+    "timestamp": "2026-05-17T15:13:46.279195",
+    "action": "DEDUCT",
+    "sku_id": "SKU004",
+    "quantity": 360.0,
+    "reason": "销售消耗 2026-05-11~2026-05-16: 360.00",
+    "before_quantity": 1600.0,
+    "after_quantity": 1240.0
+  },
+  {
+    "timestamp": "2026-05-17T15:13:46.274290",
+    "action": "DEDUCT",
+    "sku_id": "SKU005",
+    "quantity": 540.0,
+    "reason": "销售消耗 2026-05-11~2026-05-16: 540.00",
+    "before_quantity": 1100.0,
+    "after_quantity": 560.0
+  },
+  {
+    "timestamp": "2026-05-17T15:13:46.269405",
+    "action": "DEDUCT",
+    "sku_id": "SKU007",
+    "quantity": 670.0,
+    "reason": "销售消耗 2026-05-11~2026-05-16: 670.00",
+    "before_quantity": 5700.0,
+    "after_quantity": 5030.0
+  },
+  {
+    "timestamp": "2026-05-17T15:13:46.264452",
+    "action": "DEDUCT",
+    "sku_id": "SKU009",
+    "quantity": 1480.0,
+    "reason": "销售消耗 2026-05-11~2026-05-16: 1480.00",
+    "before_quantity": 4500.0,
+    "after_quantity": 3020.0
+  },
+  {
+    "timestamp": "2026-05-17T15:01:52.375985",
+    "action": "ADD",
+    "sku_id": "SKU031",
+    "quantity": 15.0,
+    "reason": "进货单入库: 1箱 × 15kg/箱, 单号 OCK2026051309342 [6袋/箱 × 2.5kg/袋]",
+    "before_quantity": 7.5,
+    "after_quantity": 22.5
+  },
+  {
+    "timestamp": "2026-05-17T15:01:52.370961",
+    "action": "ADD",
+    "sku_id": "SKU013",
+    "quantity": 200.0,
+    "reason": "进货单入库: 1箱 × 200串/箱, 单号 OCK2026051309342 [10袋/箱 × 20串/袋]",
+    "before_quantity": 100.0,
+    "after_quantity": 300.0
+  },
+  {
+    "timestamp": "2026-05-17T15:01:52.366109",
+    "action": "ADD",
+    "sku_id": "SKU024",
+    "quantity": 80.0,
+    "reason": "进货单入库: 1箱 × 80串/箱, 单号 OCK2026051309342 [10袋/箱 × 8串/袋]",
+    "before_quantity": 24.0,
+    "after_quantity": 104.0
+  },
+  {
+    "timestamp": "2026-05-17T15:01:52.361185",
+    "action": "ADD",
+    "sku_id": "SKU005",
+    "quantity": 1000.0,
+    "reason": "进货单入库: 1箱 × 1000串/箱, 单号 OCK2026051309342 [10袋/箱 × 10把/袋 × 10串/把]",
+    "before_quantity": 100.0,
+    "after_quantity": 1100.0
+  },
+  {
+    "timestamp": "2026-05-17T15:01:52.356337",
+    "action": "ADD",
+    "sku_id": "SKU021",
+    "quantity": 160.0,
+    "reason": "进货单入库: 1箱 × 160串/箱, 单号 OCK2026051309342 [16袋/箱 × 10串/袋]",
+    "before_quantity": 20.0,
+    "after_quantity": 180.0
+  },
+  {
+    "timestamp": "2026-05-17T15:01:52.351467",
+    "action": "ADD",
+    "sku_id": "SKU014",
+    "quantity": 200.0,
+    "reason": "进货单入库: 1箱 × 200串/箱, 单号 OCK2026051309342 [10袋/箱 × 20串/袋]",
+    "before_quantity": 40.0,
+    "after_quantity": 240.0
+  },
+  {
+    "timestamp": "2026-05-17T15:01:52.346716",
+    "action": "ADD",
+    "sku_id": "SKU033",
+    "quantity": 10.0,
+    "reason": "进货单入库: 1箱 × 10kg/箱, 单号 OCK2026051309342 [10袋/箱 × 1kg/袋]",
+    "before_quantity": 1.0,
+    "after_quantity": 11.0
+  },
+  {
+    "timestamp": "2026-05-17T15:01:52.341932",
+    "action": "ADD",
+    "sku_id": "SKU018",
+    "quantity": 120.0,
+    "reason": "进货单入库: 1箱 × 120串/箱, 单号 OCK2026051309342 [12袋/箱 × 10串/袋]",
+    "before_quantity": 100.0,
+    "after_quantity": 220.0
+  },
+  {
+    "timestamp": "2026-05-17T15:01:52.337096",
+    "action": "ADD",
+    "sku_id": "SKU036",
+    "quantity": 10000.0,
+    "reason": "进货单入库: 1箱 × 10000g/箱, 单号 OCK2026051309342 [20袋/箱 × 500g/袋]",
+    "before_quantity": 1000.0,
+    "after_quantity": 11000.0
+  },
+  {
+    "timestamp": "2026-05-17T15:01:52.332273",
+    "action": "ADD",
+    "sku_id": "SKU043",
+    "quantity": 500.0,
+    "reason": "进货单入库: 1箱 × 500个/箱, 单号 OCK2026051309342 [10条/箱 × 50个/条]",
+    "before_quantity": 250.0,
+    "after_quantity": 750.0
+  },
+  {
+    "timestamp": "2026-05-17T15:01:52.327395",
+    "action": "ADD",
+    "sku_id": "SKU039",
+    "quantity": 10000.0,
+    "reason": "进货单入库: 1箱 × 10000g/箱, 单号 OCK2026051309342 [20袋/箱 × 500g/袋]",
+    "before_quantity": 10000.0,
+    "after_quantity": 20000.0
+  },
+  {
+    "timestamp": "2026-05-14T12:22:57.651142",
+    "action": "ADD",
+    "sku_id": "SKU031",
+    "quantity": 15,
+    "reason": "进货单入库: 1箱 × 15kg/箱, 单号 ODK2026051309342",
+    "before_quantity": -35.7,
+    "after_quantity": -20.7
+  },
+  {
+    "timestamp": "2026-05-14T12:22:57.641179",
+    "action": "ADD",
+    "sku_id": "SKU013",
+    "quantity": 200,
+    "reason": "进货单入库: 1箱 × 200串/箱, 单号 ODK2026051309342",
+    "before_quantity": -759.0,
+    "after_quantity": -559.0
+  },
+  {
+    "timestamp": "2026-05-14T12:22:57.630893",
+    "action": "ADD",
+    "sku_id": "SKU024",
+    "quantity": 80,
+    "reason": "进货单入库: 1箱 × 80串/箱, 单号 ODK2026051309342",
+    "before_quantity": -192.0,
+    "after_quantity": -112.0
+  },
+  {
+    "timestamp": "2026-05-14T12:22:57.620280",
+    "action": "ADD",
+    "sku_id": "SKU005",
+    "quantity": 1000,
+    "reason": "进货单入库: 1箱 × 1000串/箱, 单号 ODK2026051309342",
+    "before_quantity": -4200.0,
+    "after_quantity": -3200.0
+  },
+  {
+    "timestamp": "2026-05-14T12:22:57.610629",
+    "action": "ADD",
+    "sku_id": "SKU021",
+    "quantity": 160,
+    "reason": "进货单入库: 1箱 × 160串/箱, 单号 ODK2026051309342",
+    "before_quantity": -333.0,
+    "after_quantity": -173.0
+  },
+  {
+    "timestamp": "2026-05-14T12:22:57.600039",
+    "action": "ADD",
+    "sku_id": "SKU014",
+    "quantity": 200,
+    "reason": "进货单入库: 1箱 × 200串/箱, 单号 ODK2026051309342",
+    "before_quantity": -349.0,
+    "after_quantity": -149.0
+  },
+  {
+    "timestamp": "2026-05-14T12:22:57.590715",
+    "action": "ADD",
+    "sku_id": "SKU033",
+    "quantity": 10,
+    "reason": "进货单入库: 1箱 × 10kg/箱, 单号 ODK2026051309342",
+    "before_quantity": -35.5,
+    "after_quantity": -25.5
+  },
+  {
+    "timestamp": "2026-05-14T12:22:57.581157",
+    "action": "ADD",
+    "sku_id": "SKU018",
+    "quantity": 120,
+    "reason": "进货单入库: 1箱 × 120串/箱, 单号 ODK2026051309342",
+    "before_quantity": -1477.0,
+    "after_quantity": -1357.0
+  },
+  {
+    "timestamp": "2026-05-14T12:22:57.568604",
+    "action": "ADD",
+    "sku_id": "SKU036",
+    "quantity": 10000,
+    "reason": "进货单入库: 1箱 × 10000g/箱, 单号 ODK2026051309342",
+    "before_quantity": 1000.0,
+    "after_quantity": 11000.0
+  },
+  {
+    "timestamp": "2026-05-14T12:22:57.560510",
+    "action": "ADD",
+    "sku_id": "SKU043",
+    "quantity": 500,
+    "reason": "进货单入库: 1箱 × 500个/箱, 单号 ODK2026051309342",
+    "before_quantity": 250.0,
+    "after_quantity": 750.0
+  },
+  {
+    "timestamp": "2026-05-14T12:22:57.553218",
+    "action": "ADD",
+    "sku_id": "SKU039",
+    "quantity": 10000,
+    "reason": "进货单入库: 1箱 × 10000g/箱, 单号 ODK2026051309342",
+    "before_quantity": 10000.0,
+    "after_quantity": 20000.0
+  },
+  {
+    "timestamp": "2026-05-14T12:09:48.694889",
+    "action": "DEDUCT",
+    "sku_id": "SKU013",
+    "quantity": 120,
+    "reason": "回退: 回退入库操作",
+    "before_quantity": -639.0,
+    "after_quantity": -759.0
+  },
+  {
+    "timestamp": "2026-05-14T12:09:48.690973",
+    "action": "DEDUCT",
+    "sku_id": "SKU031",
+    "quantity": 25,
+    "reason": "回退: 回退入库操作",
+    "before_quantity": -10.7,
+    "after_quantity": -35.7
+  },
+  {
+    "timestamp": "2026-05-14T12:09:48.685438",
+    "action": "DEDUCT",
+    "sku_id": "SKU005",
+    "quantity": 1000,
+    "reason": "回退: 回退入库操作",
+    "before_quantity": -3200.0,
+    "after_quantity": -4200.0
+  },
+  {
+    "timestamp": "2026-05-14T12:09:48.679664",
+    "action": "DEDUCT",
+    "sku_id": "SKU021",
+    "quantity": 100,
+    "reason": "回退: 回退入库操作",
+    "before_quantity": -233.0,
+    "after_quantity": -333.0
+  },
+  {
+    "timestamp": "2026-05-14T12:09:48.671537",
+    "action": "DEDUCT",
+    "sku_id": "SKU014",
+    "quantity": 200,
+    "reason": "回退: 回退入库操作",
+    "before_quantity": -149.0,
+    "after_quantity": -349.0
+  },
+  {
+    "timestamp": "2026-05-14T12:09:48.663594",
+    "action": "DEDUCT",
+    "sku_id": "SKU033",
+    "quantity": 12,
+    "reason": "回退: 回退入库操作",
+    "before_quantity": -23.5,
+    "after_quantity": -35.5
+  },
+  {
+    "timestamp": "2026-05-14T12:09:48.655640",
+    "action": "DEDUCT",
+    "sku_id": "SKU018",
+    "quantity": 100,
+    "reason": "回退: 回退入库操作",
+    "before_quantity": -1377.0,
+    "after_quantity": -1477.0
+  },
+  {
+    "timestamp": "2026-05-14T12:09:48.647558",
+    "action": "DEDUCT",
+    "sku_id": "SKU036",
+    "quantity": 35000,
+    "reason": "回退: 回退入库操作",
+    "before_quantity": 36000.0,
+    "after_quantity": 1000.0
+  },
+  {
+    "timestamp": "2026-05-14T12:09:48.639339",
+    "action": "DEDUCT",
+    "sku_id": "SKU043",
+    "quantity": 500,
+    "reason": "回退: 回退入库操作",
+    "before_quantity": 750.0,
+    "after_quantity": 250.0
+  },
+  {
+    "timestamp": "2026-05-14T12:02:16.631688",
+    "action": "ADD",
+    "sku_id": "SKU013",
+    "quantity": 120,
+    "reason": "进货单入库: 1箱 × 120串/箱, 单号 DQK2026051309342",
+    "before_quantity": -759.0,
+    "after_quantity": -639.0
+  },
+  {
+    "timestamp": "2026-05-14T12:02:16.624734",
+    "action": "ADD",
+    "sku_id": "SKU031",
+    "quantity": 25,
+    "reason": "进货单入库: 1箱 × 25kg/箱, 单号 DQK2026051309342",
+    "before_quantity": -35.7,
+    "after_quantity": -10.7
+  },
+  {
+    "timestamp": "2026-05-14T12:02:16.618479",
+    "action": "ADD",
+    "sku_id": "SKU005",
+    "quantity": 1000,
+    "reason": "进货单入库: 1箱 × 1000串/箱, 单号 DQK2026051309342",
+    "before_quantity": -4200.0,
+    "after_quantity": -3200.0
+  },
+  {
+    "timestamp": "2026-05-14T12:02:16.611810",
+    "action": "ADD",
+    "sku_id": "SKU021",
+    "quantity": 100,
+    "reason": "进货单入库: 1箱 × 100串/箱, 单号 DQK2026051309342",
+    "before_quantity": -333.0,
+    "after_quantity": -233.0
+  },
+  {
+    "timestamp": "2026-05-14T12:02:16.602319",
+    "action": "ADD",
+    "sku_id": "SKU014",
+    "quantity": 200,
+    "reason": "进货单入库: 1箱 × 200串/箱, 单号 DQK2026051309342",
+    "before_quantity": -349.0,
+    "after_quantity": -149.0
+  },
+  {
+    "timestamp": "2026-05-14T12:02:16.592293",
+    "action": "ADD",
+    "sku_id": "SKU033",
+    "quantity": 12,
+    "reason": "进货单入库: 1箱 × 12kg/箱, 单号 DQK2026051309342",
+    "before_quantity": -35.5,
+    "after_quantity": -23.5
+  },
+  {
+    "timestamp": "2026-05-14T12:02:16.583532",
+    "action": "ADD",
+    "sku_id": "SKU018",
+    "quantity": 100,
+    "reason": "进货单入库: 1箱 × 100串/箱, 单号 DQK2026051309342",
+    "before_quantity": -1477.0,
+    "after_quantity": -1377.0
+  },
+  {
+    "timestamp": "2026-05-14T12:02:16.575969",
+    "action": "ADD",
+    "sku_id": "SKU036",
+    "quantity": 35000,
+    "reason": "进货单入库: 1箱 × 35000g/箱, 单号 DQK2026051309342",
+    "before_quantity": 1000.0,
+    "after_quantity": 36000.0
+  },
+  {
+    "timestamp": "2026-05-14T12:02:16.569072",
+    "action": "ADD",
+    "sku_id": "SKU043",
+    "quantity": 500,
+    "reason": "进货单入库: 1箱 × 500个/箱, 单号 DQK2026051309342",
+    "before_quantity": 250.0,
+    "after_quantity": 750.0
+  },
+  {
+    "timestamp": "2026-05-14T11:39:43.508050",
+    "action": "DEDUCT",
+    "sku_id": "SKU032",
+    "quantity": 18.48,
+    "reason": "销售消耗 2026-04-01~2026-05-10: 18.48",
+    "before_quantity": 4.0,
+    "after_quantity": -14.48
+  },
+  {
+    "timestamp": "2026-05-14T11:39:43.497983",
+    "action": "DEDUCT",
+    "sku_id": "SKU027",
+    "quantity": 24.0,
+    "reason": "销售消耗 2026-04-01~2026-05-10: 24.00",
+    "before_quantity": 0.0,
+    "after_quantity": -24.0
+  },
+  {
+    "timestamp": "2026-05-14T11:39:43.480751",
+    "action": "DEDUCT",
+    "sku_id": "SKU033",
+    "quantity": 36.5,
+    "reason": "销售消耗 2026-04-01~2026-05-10: 36.50",
+    "before_quantity": 1.0,
+    "after_quantity": -35.5
+  },
+  {
+    "timestamp": "2026-05-14T11:39:43.471424",
+    "action": "DEDUCT",
+    "sku_id": "SKU031",
+    "quantity": 43.2,
+    "reason": "销售消耗 2026-04-01~2026-05-10: 43.20",
+    "before_quantity": 7.5,
+    "after_quantity": -35.7
+  },
+  {
+    "timestamp": "2026-05-14T11:39:43.464375",
+    "action": "DEDUCT",
+    "sku_id": "SKU025",
+    "quantity": 84.0,
+    "reason": "销售消耗 2026-04-01~2026-05-10: 84.00",
+    "before_quantity": 110.0,
+    "after_quantity": 26.0
+  },
+  {
+    "timestamp": "2026-05-14T11:39:43.455878",
+    "action": "DEDUCT",
+    "sku_id": "SKU059",
+    "quantity": 103.0,
+    "reason": "销售消耗 2026-04-01~2026-05-10: 103.00",
+    "before_quantity": 0.0,
+    "after_quantity": -103.0
+  },
+  {
+    "timestamp": "2026-05-14T11:39:43.447082",
+    "action": "DEDUCT",
+    "sku_id": "SKU022",
+    "quantity": 107.0,
+    "reason": "销售消耗 2026-04-01~2026-05-10: 107.00",
+    "before_quantity": 35.0,
+    "after_quantity": -72.0
+  },
+  {
+    "timestamp": "2026-05-14T11:39:43.437676",
+    "action": "DEDUCT",
+    "sku_id": "SKU028",
+    "quantity": 109.0,
+    "reason": "销售消耗 2026-04-01~2026-05-10: 109.00",
+    "before_quantity": 135.0,
+    "after_quantity": 26.0
+  },
+  {
+    "timestamp": "2026-05-14T11:39:43.428348",
+    "action": "DEDUCT",
+    "sku_id": "SKU061",
+    "quantity": 118.0,
+    "reason": "销售消耗 2026-04-01~2026-05-10: 118.00",
+    "before_quantity": 0.0,
+    "after_quantity": -118.0
+  },
+  {
+    "timestamp": "2026-05-14T11:39:43.419275",
+    "action": "DEDUCT",
+    "sku_id": "SKU016",
+    "quantity": 157.0,
+    "reason": "销售消耗 2026-04-01~2026-05-10: 157.00",
+    "before_quantity": 100.0,
+    "after_quantity": -57.0
+  },
+  {
+    "timestamp": "2026-05-14T11:39:43.409635",
+    "action": "DEDUCT",
+    "sku_id": "SKU060",
+    "quantity": 161.0,
+    "reason": "销售消耗 2026-04-01~2026-05-10: 161.00",
+    "before_quantity": 0.0,
+    "after_quantity": -161.0
+  },
+  {
+    "timestamp": "2026-05-14T11:39:43.399930",
+    "action": "DEDUCT",
+    "sku_id": "SKU023",
+    "quantity": 201.0,
+    "reason": "销售消耗 2026-04-01~2026-05-10: 201.00",
+    "before_quantity": 85.0,
+    "after_quantity": -116.0
+  },
+  {
+    "timestamp": "2026-05-14T11:39:43.389273",
+    "action": "DEDUCT",
+    "sku_id": "SKU024",
+    "quantity": 216.0,
+    "reason": "销售消耗 2026-04-01~2026-05-10: 216.00",
+    "before_quantity": 24.0,
+    "after_quantity": -192.0
+  },
+  {
+    "timestamp": "2026-05-14T11:39:43.379600",
+    "action": "DEDUCT",
+    "sku_id": "SKU058",
+    "quantity": 276.0,
+    "reason": "销售消耗 2026-04-01~2026-05-10: 276.00",
+    "before_quantity": 0.0,
+    "after_quantity": -276.0
+  },
+  {
+    "timestamp": "2026-05-14T11:39:43.362481",
+    "action": "DEDUCT",
+    "sku_id": "SKU020",
+    "quantity": 288.0,
+    "reason": "销售消耗 2026-04-01~2026-05-10: 288.00",
+    "before_quantity": 40.0,
+    "after_quantity": -248.0
+  },
+  {
+    "timestamp": "2026-05-14T11:39:43.352644",
+    "action": "DEDUCT",
+    "sku_id": "SKU017",
+    "quantity": 334.0,
+    "reason": "销售消耗 2026-04-01~2026-05-10: 334.00",
+    "before_quantity": 175.0,
+    "after_quantity": -159.0
+  },
+  {
+    "timestamp": "2026-05-14T11:39:43.335123",
+    "action": "DEDUCT",
+    "sku_id": "SKU021",
+    "quantity": 353.0,
+    "reason": "销售消耗 2026-04-01~2026-05-10: 353.00",
+    "before_quantity": 20.0,
+    "after_quantity": -333.0
+  },
+  {
+    "timestamp": "2026-05-14T11:39:43.325572",
+    "action": "DEDUCT",
+    "sku_id": "SKU057",
+    "quantity": 374.0,
+    "reason": "销售消耗 2026-04-01~2026-05-10: 374.00",
+    "before_quantity": 0.0,
+    "after_quantity": -374.0
+  },
+  {
+    "timestamp": "2026-05-14T11:39:43.312233",
+    "action": "DEDUCT",
+    "sku_id": "SKU014",
+    "quantity": 389.0,
+    "reason": "销售消耗 2026-04-01~2026-05-10: 389.00",
+    "before_quantity": 40.0,
+    "after_quantity": -349.0
+  },
+  {
+    "timestamp": "2026-05-14T11:39:43.302125",
+    "action": "DEDUCT",
+    "sku_id": "SKU015",
+    "quantity": 581.0,
+    "reason": "销售消耗 2026-04-01~2026-05-10: 581.00",
+    "before_quantity": 340.0,
+    "after_quantity": -241.0
+  },
+  {
+    "timestamp": "2026-05-14T11:39:43.292332",
+    "action": "DEDUCT",
+    "sku_id": "SKU012",
+    "quantity": 677.0,
+    "reason": "销售消耗 2026-04-01~2026-05-10: 677.00",
+    "before_quantity": 150.0,
+    "after_quantity": -527.0
+  },
+  {
+    "timestamp": "2026-05-14T11:39:43.285640",
+    "action": "DEDUCT",
+    "sku_id": "SKU019",
+    "quantity": 855.0,
+    "reason": "销售消耗 2026-04-01~2026-05-10: 855.00",
+    "before_quantity": 160.0,
+    "after_quantity": -695.0
+  },
+  {
+    "timestamp": "2026-05-14T11:39:43.278775",
+    "action": "DEDUCT",
+    "sku_id": "SKU013",
+    "quantity": 859.0,
+    "reason": "销售消耗 2026-04-01~2026-05-10: 859.00",
+    "before_quantity": 100.0,
+    "after_quantity": -759.0
+  },
+  {
+    "timestamp": "2026-05-14T11:39:43.271669",
+    "action": "DEDUCT",
+    "sku_id": "SKU011",
+    "quantity": 862.0,
+    "reason": "销售消耗 2026-04-01~2026-05-10: 862.00",
+    "before_quantity": 220.0,
+    "after_quantity": -642.0
+  },
+  {
+    "timestamp": "2026-05-14T11:39:43.264701",
+    "action": "DEDUCT",
+    "sku_id": "SKU003",
+    "quantity": 870.0,
+    "reason": "销售消耗 2026-04-01~2026-05-10: 870.00",
+    "before_quantity": 250.0,
+    "after_quantity": -620.0
+  },
+  {
+    "timestamp": "2026-05-14T11:39:43.257224",
+    "action": "DEDUCT",
+    "sku_id": "SKU029",
+    "quantity": 891.0,
+    "reason": "销售消耗 2026-04-01~2026-05-10: 891.00",
+    "before_quantity": 120.0,
+    "after_quantity": -771.0
+  },
+  {
+    "timestamp": "2026-05-14T11:39:43.250563",
+    "action": "DEDUCT",
+    "sku_id": "SKU030",
+    "quantity": 1163.0,
+    "reason": "销售消耗 2026-04-01~2026-05-10: 1163.00",
+    "before_quantity": 550.0,
+    "after_quantity": -613.0
+  },
+  {
+    "timestamp": "2026-05-14T11:39:43.243940",
+    "action": "DEDUCT",
+    "sku_id": "SKU006",
+    "quantity": 1225.0,
+    "reason": "销售消耗 2026-04-01~2026-05-10: 1225.00",
+    "before_quantity": 200.0,
+    "after_quantity": -1025.0
+  },
+  {
+    "timestamp": "2026-05-14T11:39:43.235806",
+    "action": "DEDUCT",
+    "sku_id": "SKU026",
+    "quantity": 1392.0,
+    "reason": "销售消耗 2026-04-01~2026-05-10: 1392.00",
+    "before_quantity": 200.0,
+    "after_quantity": -1192.0
+  },
+  {
+    "timestamp": "2026-05-14T11:39:43.228969",
+    "action": "DEDUCT",
+    "sku_id": "SKU018",
+    "quantity": 1577.0,
+    "reason": "销售消耗 2026-04-01~2026-05-10: 1577.00",
+    "before_quantity": 100.0,
+    "after_quantity": -1477.0
+  },
+  {
+    "timestamp": "2026-05-14T11:39:43.222364",
+    "action": "DEDUCT",
+    "sku_id": "SKU008",
+    "quantity": 1795.0,
+    "reason": "销售消耗 2026-04-01~2026-05-10: 1795.00",
+    "before_quantity": 600.0,
+    "after_quantity": -1195.0
+  },
+  {
+    "timestamp": "2026-05-14T11:39:43.215254",
+    "action": "DEDUCT",
+    "sku_id": "SKU001",
+    "quantity": 2160.0,
+    "reason": "销售消耗 2026-04-01~2026-05-10: 2160.00",
+    "before_quantity": 2000.0,
+    "after_quantity": -160.0
+  },
+  {
+    "timestamp": "2026-05-14T11:39:43.207925",
+    "action": "DEDUCT",
+    "sku_id": "SKU010",
+    "quantity": 2410.0,
+    "reason": "销售消耗 2026-04-01~2026-05-10: 2410.00",
+    "before_quantity": 1200.0,
+    "after_quantity": -1210.0
+  },
+  {
+    "timestamp": "2026-05-14T11:39:43.199036",
+    "action": "DEDUCT",
+    "sku_id": "SKU002",
+    "quantity": 2578.0,
+    "reason": "销售消耗 2026-04-01~2026-05-10: 2578.00",
+    "before_quantity": 450.0,
+    "after_quantity": -2128.0
+  },
+  {
+    "timestamp": "2026-05-14T11:39:43.193464",
+    "action": "DEDUCT",
+    "sku_id": "SKU004",
+    "quantity": 2600.0,
+    "reason": "销售消耗 2026-04-01~2026-05-10: 2600.00",
+    "before_quantity": 1600.0,
+    "after_quantity": -1000.0
+  },
+  {
+    "timestamp": "2026-05-14T11:39:43.187726",
+    "action": "DEDUCT",
+    "sku_id": "SKU005",
+    "quantity": 4300.0,
+    "reason": "销售消耗 2026-04-01~2026-05-10: 4300.00",
+    "before_quantity": 100.0,
+    "after_quantity": -4200.0
+  },
+  {
+    "timestamp": "2026-05-14T11:39:43.178392",
+    "action": "DEDUCT",
+    "sku_id": "SKU007",
+    "quantity": 5360.0,
+    "reason": "销售消耗 2026-04-01~2026-05-10: 5360.00",
+    "before_quantity": 5700.0,
+    "after_quantity": 340.0
+  },
+  {
+    "timestamp": "2026-05-14T11:39:43.169709",
+    "action": "DEDUCT",
+    "sku_id": "SKU009",
+    "quantity": 10920.0,
+    "reason": "销售消耗 2026-04-01~2026-05-10: 10920.00",
+    "before_quantity": 4500.0,
+    "after_quantity": -6420.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:49.218752",
+    "action": "INIT",
+    "sku_id": "SKU053",
+    "quantity": 100.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 100.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:49.213940",
+    "action": "INIT",
+    "sku_id": "SKU056",
+    "quantity": 250.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 250.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:49.208328",
+    "action": "INIT",
+    "sku_id": "SKU051",
+    "quantity": 1000.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 1000.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:49.201543",
+    "action": "INIT",
+    "sku_id": "SKU050",
+    "quantity": 150.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 150.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:49.195876",
+    "action": "INIT",
+    "sku_id": "SKU049",
+    "quantity": 150.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 150.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:49.189633",
+    "action": "INIT",
+    "sku_id": "SKU048",
+    "quantity": 600.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 600.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:49.183230",
+    "action": "INIT",
+    "sku_id": "SKU047",
+    "quantity": 300.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 300.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:49.177017",
+    "action": "INIT",
+    "sku_id": "SKU046",
+    "quantity": 1000.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 1000.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:49.169036",
+    "action": "INIT",
+    "sku_id": "SKU045",
+    "quantity": 500.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 500.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:49.162461",
+    "action": "INIT",
+    "sku_id": "SKU043",
+    "quantity": 250.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 250.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:49.155098",
+    "action": "INIT",
+    "sku_id": "SKU052",
+    "quantity": 500.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 500.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:49.147567",
+    "action": "INIT",
+    "sku_id": "SKU044",
+    "quantity": 500.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 500.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:49.141442",
+    "action": "INIT",
+    "sku_id": "SKU042",
+    "quantity": 250.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 250.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:49.134720",
+    "action": "INIT",
+    "sku_id": "SKU055",
+    "quantity": 2000.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 2000.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:49.126898",
+    "action": "INIT",
+    "sku_id": "SKU054",
+    "quantity": 500.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 500.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:49.121195",
+    "action": "INIT",
+    "sku_id": "SKU041",
+    "quantity": 5000.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 5000.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:49.115803",
+    "action": "INIT",
+    "sku_id": "SKU038",
+    "quantity": 1500.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 1500.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:49.109122",
+    "action": "INIT",
+    "sku_id": "SKU037",
+    "quantity": 1500.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 1500.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:49.103384",
+    "action": "INIT",
+    "sku_id": "SKU035",
+    "quantity": 5000.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 5000.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:49.095591",
+    "action": "INIT",
+    "sku_id": "SKU039",
+    "quantity": 10000.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 10000.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:49.088342",
+    "action": "INIT",
+    "sku_id": "SKU040",
+    "quantity": 7500.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 7500.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:49.082394",
+    "action": "INIT",
+    "sku_id": "SKU034",
+    "quantity": 5000.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 5000.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:49.075213",
+    "action": "INIT",
+    "sku_id": "SKU036",
+    "quantity": 1000.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 1000.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:49.068223",
+    "action": "INIT",
+    "sku_id": "SKU032",
+    "quantity": 4.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 4.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:49.062780",
+    "action": "INIT",
+    "sku_id": "SKU027",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:49.057243",
+    "action": "INIT",
+    "sku_id": "SKU033",
+    "quantity": 1.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 1.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:49.049665",
+    "action": "INIT",
+    "sku_id": "SKU031",
+    "quantity": 7.5,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 7.5
+  },
+  {
+    "timestamp": "2026-05-13T19:34:49.040873",
+    "action": "INIT",
+    "sku_id": "SKU025",
+    "quantity": 110.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 110.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:49.034171",
+    "action": "INIT",
+    "sku_id": "SKU059",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:49.027893",
+    "action": "INIT",
+    "sku_id": "SKU022",
+    "quantity": 35.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 35.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:49.021091",
+    "action": "INIT",
+    "sku_id": "SKU028",
+    "quantity": 135.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 135.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:49.013987",
+    "action": "INIT",
+    "sku_id": "SKU061",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:49.007417",
+    "action": "INIT",
+    "sku_id": "SKU016",
+    "quantity": 100.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 100.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:49.000151",
+    "action": "INIT",
+    "sku_id": "SKU060",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:48.996033",
+    "action": "INIT",
+    "sku_id": "SKU023",
+    "quantity": 85.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 85.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:48.989149",
+    "action": "INIT",
+    "sku_id": "SKU024",
+    "quantity": 24.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 24.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:48.982682",
+    "action": "INIT",
+    "sku_id": "SKU058",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:48.978844",
+    "action": "INIT",
+    "sku_id": "SKU020",
+    "quantity": 40.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 40.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:48.975421",
+    "action": "INIT",
+    "sku_id": "SKU017",
+    "quantity": 175.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 175.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:48.971927",
+    "action": "INIT",
+    "sku_id": "SKU021",
+    "quantity": 20.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 20.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:48.968368",
+    "action": "INIT",
+    "sku_id": "SKU057",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:48.964762",
+    "action": "INIT",
+    "sku_id": "SKU014",
+    "quantity": 40.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 40.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:48.958700",
+    "action": "INIT",
+    "sku_id": "SKU015",
+    "quantity": 340.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 340.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:48.955053",
+    "action": "INIT",
+    "sku_id": "SKU012",
+    "quantity": 150.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 150.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:48.951555",
+    "action": "INIT",
+    "sku_id": "SKU019",
+    "quantity": 160.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 160.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:48.947799",
+    "action": "INIT",
+    "sku_id": "SKU013",
+    "quantity": 100.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 100.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:48.943373",
+    "action": "INIT",
+    "sku_id": "SKU011",
+    "quantity": 220.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 220.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:48.940211",
+    "action": "INIT",
+    "sku_id": "SKU003",
+    "quantity": 250.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 250.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:48.937291",
+    "action": "INIT",
+    "sku_id": "SKU029",
+    "quantity": 120.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 120.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:48.932517",
+    "action": "INIT",
+    "sku_id": "SKU030",
+    "quantity": 550.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 550.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:48.928006",
+    "action": "INIT",
+    "sku_id": "SKU006",
+    "quantity": 200.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 200.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:48.923458",
+    "action": "INIT",
+    "sku_id": "SKU026",
+    "quantity": 200.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 200.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:48.919795",
+    "action": "INIT",
+    "sku_id": "SKU018",
+    "quantity": 100.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 100.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:48.916239",
+    "action": "INIT",
+    "sku_id": "SKU008",
+    "quantity": 600.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 600.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:48.912558",
+    "action": "INIT",
+    "sku_id": "SKU001",
+    "quantity": 2000.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 2000.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:48.908700",
+    "action": "INIT",
+    "sku_id": "SKU010",
+    "quantity": 1200.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 1200.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:48.904686",
+    "action": "INIT",
+    "sku_id": "SKU002",
+    "quantity": 450.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 450.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:48.902045",
+    "action": "INIT",
+    "sku_id": "SKU004",
+    "quantity": 1600.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 1600.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:48.899361",
+    "action": "INIT",
+    "sku_id": "SKU005",
+    "quantity": 100.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 100.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:48.894949",
+    "action": "INIT",
+    "sku_id": "SKU007",
+    "quantity": 5700.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 5700.0
+  },
+  {
+    "timestamp": "2026-05-13T19:34:48.891760",
+    "action": "INIT",
+    "sku_id": "SKU009",
+    "quantity": 4500.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 4500.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.516915",
+    "action": "INIT",
+    "sku_id": "SKU053",
+    "quantity": 100.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 100.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.494595",
+    "action": "INIT",
+    "sku_id": "SKU056",
+    "quantity": 250.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 250.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.485374",
+    "action": "INIT",
+    "sku_id": "SKU051",
+    "quantity": 1000.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 1000.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.476186",
+    "action": "INIT",
+    "sku_id": "SKU050",
+    "quantity": 150.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 150.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.466513",
+    "action": "INIT",
+    "sku_id": "SKU049",
+    "quantity": 150.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 150.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.459431",
+    "action": "INIT",
+    "sku_id": "SKU048",
+    "quantity": 600.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 600.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.451216",
+    "action": "INIT",
+    "sku_id": "SKU047",
+    "quantity": 300.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 300.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.433694",
+    "action": "INIT",
+    "sku_id": "SKU046",
+    "quantity": 1000.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 1000.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.424893",
+    "action": "INIT",
+    "sku_id": "SKU045",
+    "quantity": 500.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 500.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.417653",
+    "action": "INIT",
+    "sku_id": "SKU043",
+    "quantity": 250.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 250.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.395664",
+    "action": "INIT",
+    "sku_id": "SKU052",
+    "quantity": 500.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 500.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.388433",
+    "action": "INIT",
+    "sku_id": "SKU044",
+    "quantity": 500.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 500.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.381543",
+    "action": "INIT",
+    "sku_id": "SKU042",
+    "quantity": 250.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 250.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.375522",
+    "action": "INIT",
+    "sku_id": "SKU055",
+    "quantity": 2000.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 2000.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.369702",
+    "action": "INIT",
+    "sku_id": "SKU054",
+    "quantity": 500.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 500.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.361585",
+    "action": "INIT",
+    "sku_id": "SKU041",
+    "quantity": 5000.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 5000.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.355790",
+    "action": "INIT",
+    "sku_id": "SKU038",
+    "quantity": 1500.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 1500.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.348847",
+    "action": "INIT",
+    "sku_id": "SKU037",
+    "quantity": 1500.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 1500.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.340871",
+    "action": "INIT",
+    "sku_id": "SKU035",
+    "quantity": 5000.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 5000.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.332469",
+    "action": "INIT",
+    "sku_id": "SKU039",
+    "quantity": 10000.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 10000.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.317145",
+    "action": "INIT",
+    "sku_id": "SKU040",
+    "quantity": 7500.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 7500.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.307973",
+    "action": "INIT",
+    "sku_id": "SKU034",
+    "quantity": 5000.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 5000.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.290996",
+    "action": "INIT",
+    "sku_id": "SKU036",
+    "quantity": 1000.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 1000.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.285294",
+    "action": "INIT",
+    "sku_id": "SKU032",
+    "quantity": 4.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 4.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.276084",
+    "action": "INIT",
+    "sku_id": "SKU027",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.269305",
+    "action": "INIT",
+    "sku_id": "SKU033",
+    "quantity": 1.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 1.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.248656",
+    "action": "INIT",
+    "sku_id": "SKU031",
+    "quantity": 7.5,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 7.5
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.238783",
+    "action": "INIT",
+    "sku_id": "SKU025",
+    "quantity": 110.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 110.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.231717",
+    "action": "INIT",
+    "sku_id": "SKU022",
+    "quantity": 35.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 35.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.223915",
+    "action": "INIT",
+    "sku_id": "SKU028",
+    "quantity": 135.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 135.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.217174",
+    "action": "INIT",
+    "sku_id": "SKU016",
+    "quantity": 100.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 100.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.206330",
+    "action": "INIT",
+    "sku_id": "SKU023",
+    "quantity": 85.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 85.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.197402",
+    "action": "INIT",
+    "sku_id": "SKU024",
+    "quantity": 24.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 24.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.191580",
+    "action": "INIT",
+    "sku_id": "SKU020",
+    "quantity": 40.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 40.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.182996",
+    "action": "INIT",
+    "sku_id": "SKU017",
+    "quantity": 175.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 175.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.174715",
+    "action": "INIT",
+    "sku_id": "SKU021",
+    "quantity": 20.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 20.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.168398",
+    "action": "INIT",
+    "sku_id": "SKU014",
+    "quantity": 40.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 40.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.164040",
+    "action": "INIT",
+    "sku_id": "SKU015",
+    "quantity": 340.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 340.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.157974",
+    "action": "INIT",
+    "sku_id": "SKU012",
+    "quantity": 150.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 150.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.140133",
+    "action": "INIT",
+    "sku_id": "SKU019",
+    "quantity": 160.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 160.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.133388",
+    "action": "INIT",
+    "sku_id": "SKU013",
+    "quantity": 100.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 100.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.127468",
+    "action": "INIT",
+    "sku_id": "SKU011",
+    "quantity": 220.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 220.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.106814",
+    "action": "INIT",
+    "sku_id": "SKU003",
+    "quantity": 250.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 250.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.102403",
+    "action": "INIT",
+    "sku_id": "SKU029",
+    "quantity": 120.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 120.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.097854",
+    "action": "INIT",
+    "sku_id": "SKU030",
+    "quantity": 550.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 550.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.093581",
+    "action": "INIT",
+    "sku_id": "SKU006",
+    "quantity": 200.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 200.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.089282",
+    "action": "INIT",
+    "sku_id": "SKU026",
+    "quantity": 200.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 200.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.085123",
+    "action": "INIT",
+    "sku_id": "SKU018",
+    "quantity": 100.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 100.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.080854",
+    "action": "INIT",
+    "sku_id": "SKU008",
+    "quantity": 600.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 600.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.073898",
+    "action": "INIT",
+    "sku_id": "SKU001",
+    "quantity": 2000.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 2000.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.066765",
+    "action": "INIT",
+    "sku_id": "SKU010",
+    "quantity": 1200.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 1200.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.049986",
+    "action": "INIT",
+    "sku_id": "SKU002",
+    "quantity": 450.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 450.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.046412",
+    "action": "INIT",
+    "sku_id": "SKU004",
+    "quantity": 1600.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 1600.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.042369",
+    "action": "INIT",
+    "sku_id": "SKU005",
+    "quantity": 100.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 100.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.036087",
+    "action": "INIT",
+    "sku_id": "SKU007",
+    "quantity": 5700.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 5700.0
+  },
+  {
+    "timestamp": "2026-05-13T19:30:01.031477",
+    "action": "INIT",
+    "sku_id": "SKU009",
+    "quantity": 4500.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 4500.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.459003",
+    "action": "INIT",
+    "sku_id": "SKU053",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.454206",
+    "action": "INIT",
+    "sku_id": "SKU056",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.449650",
+    "action": "INIT",
+    "sku_id": "SKU051",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.445021",
+    "action": "INIT",
+    "sku_id": "SKU050",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.440538",
+    "action": "INIT",
+    "sku_id": "SKU049",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.436242",
+    "action": "INIT",
+    "sku_id": "SKU048",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.431874",
+    "action": "INIT",
+    "sku_id": "SKU047",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.427406",
+    "action": "INIT",
+    "sku_id": "SKU046",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.423095",
+    "action": "INIT",
+    "sku_id": "SKU045",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.418785",
+    "action": "INIT",
+    "sku_id": "SKU043",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.414477",
+    "action": "INIT",
+    "sku_id": "SKU052",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.409879",
+    "action": "INIT",
+    "sku_id": "SKU044",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.405757",
+    "action": "INIT",
+    "sku_id": "SKU042",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.401321",
+    "action": "INIT",
+    "sku_id": "SKU055",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.396933",
+    "action": "INIT",
+    "sku_id": "SKU054",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.392828",
+    "action": "INIT",
+    "sku_id": "SKU041",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.388801",
+    "action": "INIT",
+    "sku_id": "SKU038",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.384468",
+    "action": "INIT",
+    "sku_id": "SKU037",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.380228",
+    "action": "INIT",
+    "sku_id": "SKU035",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.374385",
+    "action": "INIT",
+    "sku_id": "SKU039",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.370410",
+    "action": "INIT",
+    "sku_id": "SKU040",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.366333",
+    "action": "INIT",
+    "sku_id": "SKU034",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.362181",
+    "action": "INIT",
+    "sku_id": "SKU036",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.358437",
+    "action": "INIT",
+    "sku_id": "SKU032",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.354846",
+    "action": "INIT",
+    "sku_id": "SKU027",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.351231",
+    "action": "INIT",
+    "sku_id": "SKU033",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.347469",
+    "action": "INIT",
+    "sku_id": "SKU031",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.343963",
+    "action": "INIT",
+    "sku_id": "SKU025",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.340362",
+    "action": "INIT",
+    "sku_id": "SKU022",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.336823",
+    "action": "INIT",
+    "sku_id": "SKU028",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.333323",
+    "action": "INIT",
+    "sku_id": "SKU016",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.329869",
+    "action": "INIT",
+    "sku_id": "SKU023",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.326467",
+    "action": "INIT",
+    "sku_id": "SKU024",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.323197",
+    "action": "INIT",
+    "sku_id": "SKU020",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.319928",
+    "action": "INIT",
+    "sku_id": "SKU017",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.316645",
+    "action": "INIT",
+    "sku_id": "SKU021",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.312874",
+    "action": "INIT",
+    "sku_id": "SKU014",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.309387",
+    "action": "INIT",
+    "sku_id": "SKU015",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.306183",
+    "action": "INIT",
+    "sku_id": "SKU012",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.303100",
+    "action": "INIT",
+    "sku_id": "SKU019",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.299673",
+    "action": "INIT",
+    "sku_id": "SKU013",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.296424",
+    "action": "INIT",
+    "sku_id": "SKU011",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.292731",
+    "action": "INIT",
+    "sku_id": "SKU003",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.290613",
+    "action": "INIT",
+    "sku_id": "SKU029",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.288716",
+    "action": "INIT",
+    "sku_id": "SKU030",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.285206",
+    "action": "INIT",
+    "sku_id": "SKU006",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.281757",
+    "action": "INIT",
+    "sku_id": "SKU026",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.278226",
+    "action": "INIT",
+    "sku_id": "SKU018",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.276593",
+    "action": "INIT",
+    "sku_id": "SKU008",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.274738",
+    "action": "INIT",
+    "sku_id": "SKU001",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.273117",
+    "action": "INIT",
+    "sku_id": "SKU010",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.270837",
+    "action": "INIT",
+    "sku_id": "SKU002",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.266868",
+    "action": "INIT",
+    "sku_id": "SKU004",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.263879",
+    "action": "INIT",
+    "sku_id": "SKU005",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.261786",
+    "action": "INIT",
+    "sku_id": "SKU007",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:29:04.258783",
+    "action": "INIT",
+    "sku_id": "SKU009",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:24.113702",
+    "action": "INIT",
+    "sku_id": "SKU053",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:24.110308",
+    "action": "INIT",
+    "sku_id": "SKU056",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:24.108196",
+    "action": "INIT",
+    "sku_id": "SKU051",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:24.106321",
+    "action": "INIT",
+    "sku_id": "SKU050",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:24.103783",
+    "action": "INIT",
+    "sku_id": "SKU049",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:24.101219",
+    "action": "INIT",
+    "sku_id": "SKU048",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:24.099481",
+    "action": "INIT",
+    "sku_id": "SKU047",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:24.096917",
+    "action": "INIT",
+    "sku_id": "SKU046",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:24.095251",
+    "action": "INIT",
+    "sku_id": "SKU045",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:24.092282",
+    "action": "INIT",
+    "sku_id": "SKU043",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:24.089672",
+    "action": "INIT",
+    "sku_id": "SKU052",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:24.088047",
+    "action": "INIT",
+    "sku_id": "SKU044",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:24.085646",
+    "action": "INIT",
+    "sku_id": "SKU042",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:24.082738",
+    "action": "INIT",
+    "sku_id": "SKU055",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:24.080170",
+    "action": "INIT",
+    "sku_id": "SKU054",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:24.078103",
+    "action": "INIT",
+    "sku_id": "SKU041",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:24.075409",
+    "action": "INIT",
+    "sku_id": "SKU038",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:24.072910",
+    "action": "INIT",
+    "sku_id": "SKU037",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:24.069254",
+    "action": "INIT",
+    "sku_id": "SKU035",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:24.066755",
+    "action": "INIT",
+    "sku_id": "SKU039",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:24.063318",
+    "action": "INIT",
+    "sku_id": "SKU040",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:24.059964",
+    "action": "INIT",
+    "sku_id": "SKU034",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:24.056662",
+    "action": "INIT",
+    "sku_id": "SKU036",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:24.054039",
+    "action": "INIT",
+    "sku_id": "SKU032",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:24.051551",
+    "action": "INIT",
+    "sku_id": "SKU027",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:24.048822",
+    "action": "INIT",
+    "sku_id": "SKU033",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:24.045927",
+    "action": "INIT",
+    "sku_id": "SKU031",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:24.042724",
+    "action": "INIT",
+    "sku_id": "SKU025",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:24.039495",
+    "action": "INIT",
+    "sku_id": "SKU022",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:24.036070",
+    "action": "INIT",
+    "sku_id": "SKU028",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:24.032857",
+    "action": "INIT",
+    "sku_id": "SKU016",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:24.029703",
+    "action": "INIT",
+    "sku_id": "SKU023",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:24.026805",
+    "action": "INIT",
+    "sku_id": "SKU024",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:24.023841",
+    "action": "INIT",
+    "sku_id": "SKU020",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:24.021565",
+    "action": "INIT",
+    "sku_id": "SKU017",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:24.018730",
+    "action": "INIT",
+    "sku_id": "SKU021",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:24.015852",
+    "action": "INIT",
+    "sku_id": "SKU014",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:24.013399",
+    "action": "INIT",
+    "sku_id": "SKU015",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:24.000848",
+    "action": "INIT",
+    "sku_id": "SKU012",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:23.998552",
+    "action": "INIT",
+    "sku_id": "SKU019",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:23.996009",
+    "action": "INIT",
+    "sku_id": "SKU013",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:23.991905",
+    "action": "INIT",
+    "sku_id": "SKU011",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:23.989239",
+    "action": "INIT",
+    "sku_id": "SKU003",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:23.986785",
+    "action": "INIT",
+    "sku_id": "SKU029",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:23.984431",
+    "action": "INIT",
+    "sku_id": "SKU030",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:23.982027",
+    "action": "INIT",
+    "sku_id": "SKU006",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:23.979788",
+    "action": "INIT",
+    "sku_id": "SKU026",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:23.977187",
+    "action": "INIT",
+    "sku_id": "SKU018",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:23.974731",
+    "action": "INIT",
+    "sku_id": "SKU008",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:23.972095",
+    "action": "INIT",
+    "sku_id": "SKU001",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:23.970362",
+    "action": "INIT",
+    "sku_id": "SKU010",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:23.968658",
+    "action": "INIT",
+    "sku_id": "SKU002",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:23.966679",
+    "action": "INIT",
+    "sku_id": "SKU004",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:23.964495",
+    "action": "INIT",
+    "sku_id": "SKU005",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:23.962342",
+    "action": "INIT",
+    "sku_id": "SKU007",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:28:23.960459",
+    "action": "INIT",
+    "sku_id": "SKU009",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.454785",
+    "action": "INIT",
+    "sku_id": "SKU053",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.452118",
+    "action": "INIT",
+    "sku_id": "SKU056",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.449884",
+    "action": "INIT",
+    "sku_id": "SKU051",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.448499",
+    "action": "INIT",
+    "sku_id": "SKU050",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.446743",
+    "action": "INIT",
+    "sku_id": "SKU049",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.444201",
+    "action": "INIT",
+    "sku_id": "SKU048",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.441525",
+    "action": "INIT",
+    "sku_id": "SKU047",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.439431",
+    "action": "INIT",
+    "sku_id": "SKU046",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.436891",
+    "action": "INIT",
+    "sku_id": "SKU045",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.434231",
+    "action": "INIT",
+    "sku_id": "SKU043",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.431985",
+    "action": "INIT",
+    "sku_id": "SKU052",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.429742",
+    "action": "INIT",
+    "sku_id": "SKU044",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.427746",
+    "action": "INIT",
+    "sku_id": "SKU042",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.425870",
+    "action": "INIT",
+    "sku_id": "SKU055",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.424101",
+    "action": "INIT",
+    "sku_id": "SKU054",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.422200",
+    "action": "INIT",
+    "sku_id": "SKU041",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.420388",
+    "action": "INIT",
+    "sku_id": "SKU038",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.418391",
+    "action": "INIT",
+    "sku_id": "SKU037",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.416723",
+    "action": "INIT",
+    "sku_id": "SKU035",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.414684",
+    "action": "INIT",
+    "sku_id": "SKU039",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.411772",
+    "action": "INIT",
+    "sku_id": "SKU040",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.410141",
+    "action": "INIT",
+    "sku_id": "SKU034",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.408066",
+    "action": "INIT",
+    "sku_id": "SKU036",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.405749",
+    "action": "INIT",
+    "sku_id": "SKU032",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.404672",
+    "action": "INIT",
+    "sku_id": "SKU027",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.402781",
+    "action": "INIT",
+    "sku_id": "SKU033",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.401411",
+    "action": "INIT",
+    "sku_id": "SKU031",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.399929",
+    "action": "INIT",
+    "sku_id": "SKU025",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.398147",
+    "action": "INIT",
+    "sku_id": "SKU022",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.396581",
+    "action": "INIT",
+    "sku_id": "SKU028",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.395073",
+    "action": "INIT",
+    "sku_id": "SKU016",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.393272",
+    "action": "INIT",
+    "sku_id": "SKU023",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.391680",
+    "action": "INIT",
+    "sku_id": "SKU024",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.390238",
+    "action": "INIT",
+    "sku_id": "SKU020",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.388817",
+    "action": "INIT",
+    "sku_id": "SKU017",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.387445",
+    "action": "INIT",
+    "sku_id": "SKU021",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.386223",
+    "action": "INIT",
+    "sku_id": "SKU014",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.385195",
+    "action": "INIT",
+    "sku_id": "SKU015",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.384019",
+    "action": "INIT",
+    "sku_id": "SKU012",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.382855",
+    "action": "INIT",
+    "sku_id": "SKU019",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.381546",
+    "action": "INIT",
+    "sku_id": "SKU013",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.380526",
+    "action": "INIT",
+    "sku_id": "SKU011",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.379501",
+    "action": "INIT",
+    "sku_id": "SKU003",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.378391",
+    "action": "INIT",
+    "sku_id": "SKU029",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.377393",
+    "action": "INIT",
+    "sku_id": "SKU030",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.376578",
+    "action": "INIT",
+    "sku_id": "SKU006",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.375567",
+    "action": "INIT",
+    "sku_id": "SKU026",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.374567",
+    "action": "INIT",
+    "sku_id": "SKU018",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.373693",
+    "action": "INIT",
+    "sku_id": "SKU008",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.372990",
+    "action": "INIT",
+    "sku_id": "SKU001",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.372339",
+    "action": "INIT",
+    "sku_id": "SKU010",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.371736",
+    "action": "INIT",
+    "sku_id": "SKU002",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.371108",
+    "action": "INIT",
+    "sku_id": "SKU004",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.370093",
+    "action": "INIT",
+    "sku_id": "SKU005",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.369478",
+    "action": "INIT",
+    "sku_id": "SKU007",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-13T19:27:49.368856",
+    "action": "INIT",
+    "sku_id": "SKU009",
+    "quantity": 0.0,
+    "reason": "初始化库存",
+    "before_quantity": null,
+    "after_quantity": 0.0
+  },
+  {
+    "timestamp": "2026-05-17T15:25:52.766932",
+    "action": "ADJUST",
+    "sku_id": "SKU042",
+    "quantity": 250.0,
+    "before": 250.0,
+    "after": 500.0,
+    "reason": "老王人工修正：起始库存应为 500 个（不是 250 个）"
+  },
+  {
+    "timestamp": "2026-05-17T16:13:32.157084",
+    "operation": "ROLLBACK",
+    "reason": "重新整理流程：从 2026-05-17T15:26 状态回滚到 2026-05-10T23:59:59 状态",
+    "source_backup": "inventory.json.before_purchase_20260517_150152",
+    "current_backup": "inventory.json.before_rollback_to_5_10_20260517_161332",
+    "details": {
+      "rolled_back_actions": [
+        "5/13 进货入库 (OCK2026051309342, 11 件)",
+        "5/11~5/16 销售扣减 (32 个 SKU)",
+        "5/11~5/16 间接消耗扣减 (调料 8 + 包材 15)"
+      ],
+      "skus_changed": 55,
+      "log_entries_kept": 419
+    },
+    "operator": "蜜蜡 (per 老王 instruction)"
+  },
+  {
+    "timestamp": "2026-05-17T16:50:47.207640",
+    "action": "ADJUST",
+    "sku_id": "SKU042",
+    "quantity": 250.0,
+    "before_quantity": 250.0,
+    "after_quantity": 500.0,
+    "reason": "5/10 盘点校对：实盘 10 条 = 500 个",
+    "operator": "老王盘点 (via 蜜蜡)"
+  },
+  {
+    "timestamp": "2026-05-17T16:50:47.207640",
+    "action": "ADJUST",
+    "sku_id": "SKU043",
+    "quantity": -100.0,
+    "before_quantity": 250.0,
+    "after_quantity": 150.0,
+    "reason": "5/10 盘点校对：实盘 3 条 = 150 个",
+    "operator": "老王盘点 (via 蜜蜡)"
+  },
+  {
+    "timestamp": "2026-05-17T16:50:47.207640",
+    "action": "ADJUST",
+    "sku_id": "SKU031",
+    "quantity": -5.0,
+    "before_quantity": 7.5,
+    "after_quantity": 2.5,
+    "reason": "5/10 盘点校对：实盘 1 袋 = 2.5 kg",
+    "operator": "老王盘点 (via 蜜蜡)"
+  },
+  {
+    "timestamp": "2026-05-17T16:50:47.207640",
+    "action": "ADJUST",
+    "sku_id": "SKU033",
+    "quantity": 2.0,
+    "before_quantity": 1.0,
+    "after_quantity": 3.0,
+    "reason": "5/10 盘点校对：实盘 3 袋 = 3 kg",
+    "operator": "老王盘点 (via 蜜蜡)"
+  },
+  {
+    "timestamp": "2026-05-17T16:50:47.207640",
+    "action": "ADJUST",
+    "sku_id": "SKU037",
+    "quantity": 3500.0,
+    "before_quantity": 1500.0,
+    "after_quantity": 5000.0,
+    "reason": "5/10 盘点校对：实盘 10 袋 = 5000 g",
+    "operator": "老王盘点 (via 蜜蜡)"
+  },
+  {
+    "timestamp": "2026-05-17T16:50:47.207640",
+    "action": "ADJUST",
+    "sku_id": "SKU039",
+    "quantity": -5500.0,
+    "before_quantity": 10000.0,
+    "after_quantity": 4500.0,
+    "reason": "5/10 盘点校对：实盘 9 袋 = 4500 g",
+    "operator": "老王盘点 (via 蜜蜡)"
+  },
+  {
+    "timestamp": "2026-05-17T16:50:47.207640",
+    "action": "ADJUST",
+    "sku_id": "SKU040",
+    "quantity": -2500.0,
+    "before_quantity": 7500.0,
+    "after_quantity": 5000.0,
+    "reason": "5/10 盘点校对：实盘 2 袋 = 5000 g",
+    "operator": "老王盘点 (via 蜜蜡)"
+  },
+  {
+    "timestamp": "2026-05-17T16:59:52.619941",
+    "action": "ADD",
+    "sku_id": "SKU039",
+    "quantity": 10000.0,
+    "before_quantity": 4500.0,
+    "after_quantity": 14500.0,
+    "reason": "进货入库 OCK2026051309342: 1箱 × 10000 g/箱 (20袋/箱)",
+    "operator": "蜜蜡 (per 老王 5/13 重新入库)"
+  },
+  {
+    "timestamp": "2026-05-17T16:59:52.619941",
+    "action": "ADD",
+    "sku_id": "SKU043",
+    "quantity": 500.0,
+    "before_quantity": 150.0,
+    "after_quantity": 650.0,
+    "reason": "进货入库 OCK2026051309342: 1箱 × 500 个/箱 (10条/箱)",
+    "operator": "蜜蜡 (per 老王 5/13 重新入库)"
+  },
+  {
+    "timestamp": "2026-05-17T16:59:52.619941",
+    "action": "ADD",
+    "sku_id": "SKU036",
+    "quantity": 10000.0,
+    "before_quantity": 1000.0,
+    "after_quantity": 11000.0,
+    "reason": "进货入库 OCK2026051309342: 1箱 × 10000 g/箱 (20袋/箱)",
+    "operator": "蜜蜡 (per 老王 5/13 重新入库)"
+  },
+  {
+    "timestamp": "2026-05-17T16:59:52.619941",
+    "action": "ADD",
+    "sku_id": "SKU018",
+    "quantity": 120.0,
+    "before_quantity": 100.0,
+    "after_quantity": 220.0,
+    "reason": "进货入库 OCK2026051309342: 1箱 × 120 串/箱 (10个*12袋/箱)",
+    "operator": "蜜蜡 (per 老王 5/13 重新入库)"
+  },
+  {
+    "timestamp": "2026-05-17T16:59:52.619941",
+    "action": "ADD",
+    "sku_id": "SKU033",
+    "quantity": 10.0,
+    "before_quantity": 3.0,
+    "after_quantity": 13.0,
+    "reason": "进货入库 OCK2026051309342: 1箱 × 10 kg/箱 (1kg*10袋/箱)",
+    "operator": "蜜蜡 (per 老王 5/13 重新入库)"
+  },
+  {
+    "timestamp": "2026-05-17T16:59:52.619941",
+    "action": "ADD",
+    "sku_id": "SKU014",
+    "quantity": 200.0,
+    "before_quantity": 40.0,
+    "after_quantity": 240.0,
+    "reason": "进货入库 OCK2026051309342: 1箱 × 200 串/箱 (10袋/箱)",
+    "operator": "蜜蜡 (per 老王 5/13 重新入库)"
+  },
+  {
+    "timestamp": "2026-05-17T16:59:52.619941",
+    "action": "ADD",
+    "sku_id": "SKU021",
+    "quantity": 160.0,
+    "before_quantity": 20.0,
+    "after_quantity": 180.0,
+    "reason": "进货入库 OCK2026051309342: 1箱 × 160 串/箱 (16袋/箱)",
+    "operator": "蜜蜡 (per 老王 5/13 重新入库)"
+  },
+  {
+    "timestamp": "2026-05-17T16:59:52.619941",
+    "action": "ADD",
+    "sku_id": "SKU005",
+    "quantity": 1000.0,
+    "before_quantity": 100.0,
+    "after_quantity": 1100.0,
+    "reason": "进货入库 OCK2026051309342: 1箱 × 1000 串/箱 (10把*10袋)",
+    "operator": "蜜蜡 (per 老王 5/13 重新入库)"
+  },
+  {
+    "timestamp": "2026-05-17T16:59:52.619941",
+    "action": "ADD",
+    "sku_id": "SKU024",
+    "quantity": 80.0,
+    "before_quantity": 24.0,
+    "after_quantity": 104.0,
+    "reason": "进货入库 OCK2026051309342: 1箱 × 80 串/箱 (8个*10袋/箱)",
+    "operator": "蜜蜡 (per 老王 5/13 重新入库)"
+  },
+  {
+    "timestamp": "2026-05-17T16:59:52.619941",
+    "action": "ADD",
+    "sku_id": "SKU013",
+    "quantity": 200.0,
+    "before_quantity": 100.0,
+    "after_quantity": 300.0,
+    "reason": "进货入库 OCK2026051309342: 1箱 × 200 串/箱 (20袋/箱)",
+    "operator": "蜜蜡 (per 老王 5/13 重新入库)"
+  },
+  {
+    "timestamp": "2026-05-17T16:59:52.619941",
+    "action": "ADD",
+    "sku_id": "SKU031",
+    "quantity": 15.0,
+    "before_quantity": 2.5,
+    "after_quantity": 17.5,
+    "reason": "进货入库 OCK2026051309342: 1箱 × 15 kg/箱 (2.5kg*6袋/箱)",
+    "operator": "蜜蜡 (per 老王 5/13 重新入库)"
+  }
+]

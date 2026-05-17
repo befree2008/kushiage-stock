@@ -8,8 +8,17 @@ env/
 venv/
 ENV/
 
-# ========== data 目录：全部忽略 ==========
-data/
+# ========== data 目录：默认忽略，但例外保留几个关键文件 ==========
+data/*
+!data/.gitkeep
+!data/sku_dictionary.csv
+!data/inventory.json
+!data/inventory_log.json
+
+# 备份文件永远不进 git
+data/*.before_*
+data/*.error_backup_*
+data/*.backup
 
 # 盘货文件（本地临时文件）
 /tmp/stock_pan.xlsx

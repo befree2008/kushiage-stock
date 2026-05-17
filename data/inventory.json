@@ -1,0 +1,337 @@
+{
+  "version": "1.2",
+  "last_updated": "2026-05-17T18:06:15.599247",
+  "last_sales_deduction": {
+    "start_date": "2026-05-11",
+    "end_date": "2026-05-16",
+    "days": 6,
+    "deducted_at": "2026-05-17T17:11:15.491803"
+  },
+  "skus": {
+    "SKU001": {
+      "name": "豆干小串",
+      "quantity": 1805.0,
+      "unit": "串"
+    },
+    "SKU002": {
+      "name": "鱼豆腐串",
+      "quantity": 133.0,
+      "unit": "串"
+    },
+    "SKU003": {
+      "name": "掌中宝串",
+      "quantity": 145.0,
+      "unit": "串"
+    },
+    "SKU004": {
+      "name": "卤鸭肠小串",
+      "quantity": 1240.0,
+      "unit": "串"
+    },
+    "SKU005": {
+      "name": "玉米粒小串",
+      "quantity": 700.0,
+      "unit": "串",
+      "last_check": "2026-05-17T18:06:15.514013"
+    },
+    "SKU006": {
+      "name": "五花肉串",
+      "quantity": 200.0,
+      "unit": "串",
+      "last_check": "2026-05-17T18:06:15.520845"
+    },
+    "SKU007": {
+      "name": "纸豆皮小串",
+      "quantity": 5030.0,
+      "unit": "串"
+    },
+    "SKU008": {
+      "name": "腊肠小串",
+      "quantity": 365.0,
+      "unit": "串"
+    },
+    "SKU009": {
+      "name": "鸡肉小串",
+      "quantity": 2400.0,
+      "unit": "串",
+      "last_check": "2026-05-17T18:06:15.527493"
+    },
+    "SKU010": {
+      "name": "雪花鸡柳串",
+      "quantity": 960.0,
+      "unit": "串"
+    },
+    "SKU011": {
+      "name": "卤山川大片鸡肉串",
+      "quantity": 80.0,
+      "unit": "串",
+      "last_check": "2026-05-17T18:06:15.533982"
+    },
+    "SKU012": {
+      "name": "纯手工羊肉串",
+      "quantity": 79.0,
+      "unit": "串"
+    },
+    "SKU013": {
+      "name": "脆皮年糕",
+      "quantity": 213.0,
+      "unit": "串"
+    },
+    "SKU014": {
+      "name": "开花肠",
+      "quantity": 189.0,
+      "unit": "串"
+    },
+    "SKU015": {
+      "name": "包浆豆腐串",
+      "quantity": 269.0,
+      "unit": "串"
+    },
+    "SKU016": {
+      "name": "鱿鱼龙爪须",
+      "quantity": 120.0,
+      "unit": "串",
+      "last_check": "2026-05-17T18:06:15.540437"
+    },
+    "SKU017": {
+      "name": "骨肉相连串",
+      "quantity": 100.0,
+      "unit": "串",
+      "last_check": "2026-05-17T18:06:15.546957"
+    },
+    "SKU018": {
+      "name": "卤山川巴掌大鸡排",
+      "quantity": 49.0,
+      "unit": "串"
+    },
+    "SKU019": {
+      "name": "面筋串",
+      "quantity": 74.0,
+      "unit": "串"
+    },
+    "SKU020": {
+      "name": "大鱿鱼",
+      "quantity": 5.0,
+      "unit": "串"
+    },
+    "SKU021": {
+      "name": "椒盐烧饼",
+      "quantity": 146.0,
+      "unit": "串"
+    },
+    "SKU022": {
+      "name": "苕皮包鱿鱼",
+      "quantity": 25.0,
+      "unit": "串"
+    },
+    "SKU023": {
+      "name": "苕皮酸豆角",
+      "quantity": 70.0,
+      "unit": "串"
+    },
+    "SKU024": {
+      "name": "卤山川生炸鸡腿串",
+      "quantity": 80.0,
+      "unit": "串"
+    },
+    "SKU025": {
+      "name": "糯凤爪串",
+      "quantity": 120.0,
+      "unit": "串",
+      "last_check": "2026-05-17T18:06:15.553442"
+    },
+    "SKU026": {
+      "name": "鲜切牛肉串",
+      "quantity": 100.0,
+      "unit": "串",
+      "last_check": "2026-05-17T18:06:15.559915"
+    },
+    "SKU027": {
+      "name": "牛肚串",
+      "quantity": 0.0,
+      "unit": "串"
+    },
+    "SKU028": {
+      "name": "奥尔良翅中",
+      "quantity": 90.0,
+      "unit": "串",
+      "last_check": "2026-05-17T18:06:15.566423"
+    },
+    "SKU029": {
+      "name": "香酥豆结扣",
+      "quantity": 3.0,
+      "unit": "串"
+    },
+    "SKU030": {
+      "name": "钢签黄牛肉筋",
+      "quantity": 300.0,
+      "unit": "串",
+      "last_check": "2026-05-17T18:06:15.573052"
+    },
+    "SKU031": {
+      "name": "鸡叉骨",
+      "quantity": 9.5,
+      "unit": "kg"
+    },
+    "SKU032": {
+      "name": "锅巴土豆",
+      "quantity": 2.2,
+      "unit": "kg"
+    },
+    "SKU033": {
+      "name": "台湾无骨鸡柳",
+      "quantity": 8.0,
+      "unit": "kg",
+      "last_check": "2026-05-17T18:06:15.579563"
+    },
+    "SKU034": {
+      "name": "麻辣油炸料2号",
+      "quantity": 4000.0,
+      "unit": "g",
+      "last_check": "2026-05-17T18:06:15.586122"
+    },
+    "SKU035": {
+      "name": "美味咖喱",
+      "quantity": 7000.0,
+      "unit": "g",
+      "last_check": "2026-05-17T18:06:15.592653"
+    },
+    "SKU036": {
+      "name": "紫苏孜然撒粉",
+      "quantity": 6500.0,
+      "unit": "g",
+      "last_check": "2026-05-17T18:06:15.599240"
+    },
+    "SKU037": {
+      "name": "香辣辣椒粉",
+      "quantity": 4261.4,
+      "unit": "g"
+    },
+    "SKU038": {
+      "name": "特辣辣椒粉",
+      "quantity": 1017.0,
+      "unit": "g"
+    },
+    "SKU039": {
+      "name": "卤油",
+      "quantity": 13168.0,
+      "unit": "g"
+    },
+    "SKU040": {
+      "name": "大鱿鱼裹粉",
+      "quantity": 3333.2,
+      "unit": "g"
+    },
+    "SKU041": {
+      "name": "大鱿鱼腌料",
+      "quantity": 4847.6,
+      "unit": "g"
+    },
+    "SKU042": {
+      "name": "小串纸桶（中号）",
+      "quantity": 230.0,
+      "unit": "个"
+    },
+    "SKU043": {
+      "name": "小串纸桶（小号）",
+      "quantity": 530.0,
+      "unit": "个"
+    },
+    "SKU044": {
+      "name": "锡纸保温袋（大）",
+      "quantity": 350.0,
+      "unit": "个"
+    },
+    "SKU045": {
+      "name": "锡纸保温袋（小）",
+      "quantity": 410.0,
+      "unit": "个"
+    },
+    "SKU046": {
+      "name": "鸡柳防油纸袋",
+      "quantity": 940.0,
+      "unit": "个"
+    },
+    "SKU047": {
+      "name": "鸡柳竹签",
+      "quantity": 240.0,
+      "unit": "个"
+    },
+    "SKU048": {
+      "name": "卤山川一次性手套",
+      "quantity": 540.0,
+      "unit": "个"
+    },
+    "SKU049": {
+      "name": "卤山川纸碗（750ml）",
+      "quantity": 120.0,
+      "unit": "个"
+    },
+    "SKU050": {
+      "name": "卤山川纸碗盖",
+      "quantity": 120.0,
+      "unit": "个"
+    },
+    "SKU051": {
+      "name": "酥皮汉堡袋",
+      "quantity": 970.0,
+      "unit": "个"
+    },
+    "SKU052": {
+      "name": "卤山川无纺布袋",
+      "quantity": 350.0,
+      "unit": "个"
+    },
+    "SKU053": {
+      "name": "卤山川显眼包编织袋",
+      "quantity": 94.0,
+      "unit": "个"
+    },
+    "SKU054": {
+      "name": "卤山川透明手提袋",
+      "quantity": 140.0,
+      "unit": "个"
+    },
+    "SKU055": {
+      "name": "卤山川定制竹签（35×3.5）",
+      "quantity": 1640.0,
+      "unit": "个"
+    },
+    "SKU056": {
+      "name": "卤山川炸鸡桶（中号）",
+      "quantity": 220.0,
+      "unit": "个"
+    },
+    "SKU057": {
+      "name": "金针菇",
+      "quantity": 0.0,
+      "unit": "串"
+    },
+    "SKU058": {
+      "name": "洋白菜",
+      "quantity": 0.0,
+      "unit": "串"
+    },
+    "SKU059": {
+      "name": "娃娃菜",
+      "quantity": 0.0,
+      "unit": "串"
+    },
+    "SKU060": {
+      "name": "虎皮尖椒",
+      "quantity": 0.0,
+      "unit": "串"
+    },
+    "SKU061": {
+      "name": "花菜",
+      "quantity": 0.0,
+      "unit": "串"
+    }
+  },
+  "last_indirect_deduction": {
+    "start_date": "2026-05-11",
+    "end_date": "2026-05-16",
+    "days": 6,
+    "deducted_at": "2026-05-17T17:11:15.492433"
+  }
+}

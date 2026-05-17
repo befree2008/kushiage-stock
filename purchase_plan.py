@@ -16,18 +16,21 @@
 输入：
   data/sku_dictionary.csv    —— SKU 主数据（含进货规格、袋大小）
   data/sku_sales_summary.csv —— 销售摘要（含日均消耗）
-  /tmp/stock_pan.xlsx        —— 当前盘货（按袋）
+  data/inventory.json        —— 当前库存（base_unit数，默认）
+  /tmp/stock_pan.xlsx        —— 【兼容】人工盘点 xlsx，仅在 --stock 显式传入时使用
 
 输出：
   data/purchase_plan.csv     —— 详细报表
+  data/inventory_pieces.csv  —— 当前库存（折算成 件/袋/块 等采购粒度）
   控制台汇总
 
 用法:
   python3 purchase_plan.py                      # 自动按今天周几判断下次到货
   python3 purchase_plan.py --gap 3              # 手动指定到下次到货间隔天数
-  python3 purchase_plan.py --buffer 1           # 安全 buffer 天数（默认 0.5）
+  python3 purchase_plan.py --buffer 1           # 安全 buffer 天数（默认 1）
+  python3 purchase_plan.py --min-cover 5        # 最低覆盖天数（默认 5）
   python3 purchase_plan.py --weekend-boost 1.2  # 周末销量加成（跨周末时生效）
-  python3 purchase_plan.py --stock /path/to/stock.xlsx
+  python3 purchase_plan.py --stock /path/to/stock.xlsx  # 【兼容】从 xlsx 读盘点
   python3 purchase_plan.py --days 5             # 【兼容旧用法】直接指定总天数
 """
 import argparse
@@ -71,18 +74,22 @@ def next_delivery_gap(today: dt.date) -> tuple[int, bool]:
 ap = argparse.ArgumentParser()
 ap.add_argument("--gap", type=float, default=None,
                 help="到下次到货的天数（不给就按今天自动算）")
-ap.add_argument("--buffer", type=float, default=0.5,
-                help="安全 buffer 天数（默认 0.5 天）")
+ap.add_argument("--buffer", type=float, default=1.0,
+                help="安全 buffer 天数（默认 1 天）")
+ap.add_argument("--min-cover", type=float, default=5.0,
+                help="最低覆盖天数下限（默认 5 天：一个进货周期最闿 4 天 + 1 天 buffer）")
 ap.add_argument("--weekend-boost", type=float, default=1.15,
                 help="覆盖期跨周末时的销量加成系数（默认 1.15）")
 ap.add_argument("--seasoning-days", type=float, default=10,
                 help="调料类特殊覆盖天数（默认 10 天，因为频次低且购买粒度大）")
 ap.add_argument("--days", type=float, default=None,
                 help="【兼容】直接指定总目标天数，给了就覆盖 gap+buffer")
-ap.add_argument("--stock", default="/tmp/stock_pan.xlsx",
-                help="盘货 xlsx 路径")
+ap.add_argument("--stock", default=None,
+                help="【兼容】盘货 xlsx 路径；不传默认从 data/inventory.json 读当前库存")
 ap.add_argument("--out", default=str(DATA / "purchase_plan.csv"),
-                help="输出 CSV 路径")
+                help="补货详细报表 CSV 路径")
+ap.add_argument("--pieces-out", default=None,
+                help="当前库存折件 CSV 输出路径（默认 data/inventory_pieces_YYYYMMDD.csv）")
 ap.add_argument("--today", default=None,
                 help="模拟日期 YYYY-MM-DD（测试用）")
 args = ap.parse_args()
@@ -105,11 +112,15 @@ else:
     else:
         GAP, CROSS_WEEKEND = next_delivery_gap(today)
     BUFFER = args.buffer
-    TARGET_DAYS = GAP + BUFFER
+    raw_target = GAP + BUFFER
+    # 底线保护：不管 gap 多小，覆盖天数不低于 min_cover
+    MIN_HIT = raw_target < args.min_cover
+    TARGET_DAYS = max(raw_target, args.min_cover)
     MODE = (
         f"今天 {today} ({WEEKDAY_NAMES[today.weekday()]}) → "
         f"下次到货还有 {GAP:g} 天，buffer {BUFFER:g} 天"
         + ("（跨周末）" if CROSS_WEEKEND else "")
+        + (f"，适用最低覆盖 {args.min_cover:g} 天" if MIN_HIT else "")
     )
 
 SEASONING_DAYS = args.seasoning_days
@@ -205,27 +216,84 @@ def bags_per_box(row):
     return int(round(box / pack))
 
 
-# ============ 加载盘货 ============
-import openpyxl
+# ============ 加载盘货（优先 inventory.json，其次人工 xlsx） ============
 
-wb = openpyxl.load_workbook(STOCK_XLSX)
-ws = wb[wb.sheetnames[0]]
-rows = list(ws.iter_rows(values_only=True))
+def _piece_unit_label(sku_row):
+    """返回 '件'在业务上的中文单位字面（如 袋/条/提/把/块）。
+    从 purchase_units 里取「箱」下一级的 to 字段；取不到默认 '袋'。"""
+    try:
+        g = json.loads(sku_row["purchase_units"])
+        nxt = g.get("箱", {}).get("to")
+        if nxt:
+            return nxt
+    except Exception:
+        pass
+    return "袋"
 
-# 自动定位表头：第一行以 'sku_id' 开头的才是真正表头
-# （容错：导出的 xlsx 可能顶部多一行"文档标题"）
-header_idx = None
-for i, r in enumerate(rows):
-    if r and str(r[0]).strip() == "sku_id":
-        header_idx = i
-        break
-if header_idx is None:
-    sys.exit(f"❌ 盘货表 {STOCK_XLSX} 找不到以 'sku_id' 开头的表头行")
-header = rows[header_idx]
+
+def _piece_size_for_sku(sku_row):
+    """返回 '件'的折算到 base_unit 的倍率。优先 pack_size_base，
+    为空时从 purchase_units 里取「箱」下一级到 base 的 rate（包材常见）。均不能得到则返回 None。"""
+    pack = sku_row.get("pack_size_base", "") or ""
+    if pack not in ("", None):
+        try:
+            return float(pack)
+        except (ValueError, TypeError):
+            pass
+    try:
+        g = json.loads(sku_row["purchase_units"])
+        base = sku_row["base_unit"]
+        mid = g.get("箱", {}).get("to")
+        if mid and mid in g and g[mid].get("to") == base:
+            return float(g[mid]["rate"])
+    except Exception:
+        pass
+    return None
+
+
 stock_data = []
-for r in rows[header_idx + 1:]:
-    if r and r[0]:  # 跳过空行
-        stock_data.append(dict(zip(header, r)))
+if STOCK_XLSX:
+    # 【兼容】人工盘点 xlsx。保留原逻辑。
+    import openpyxl
+    wb = openpyxl.load_workbook(STOCK_XLSX)
+    ws = wb[wb.sheetnames[0]]
+    rows = list(ws.iter_rows(values_only=True))
+    header_idx = None
+    for i, r in enumerate(rows):
+        if r and str(r[0]).strip() == "sku_id":
+            header_idx = i
+            break
+    if header_idx is None:
+        sys.exit(f"❌ 盘货表 {STOCK_XLSX} 找不到以 'sku_id' 开头的表头行")
+    header = rows[header_idx]
+    for r in rows[header_idx + 1:]:
+        if r and r[0]:
+            stock_data.append(dict(zip(header, r)))
+else:
+    # 默认：从 inventory.json 读 base_unit 量、折算成「件」
+    inv_path = DATA / "inventory.json"
+    if not inv_path.exists():
+        sys.exit(f"❌ 找不到 {inv_path}，也未传 --stock")
+    inv_obj = json.loads(inv_path.read_text(encoding="utf-8"))
+    skus_now = inv_obj.get("skus", {})
+    print(f"ℹ️  库存来源: inventory.json (last_updated={inv_obj.get('last_updated','?')}, {len(skus_now)} 个 SKU)")
+    for sku_id, sku_meta in sku_map.items():
+        rec = skus_now.get(sku_id, {})
+        base_qty = rec.get("quantity")
+        if base_qty is None:
+            # 字典里有但 inventory 没记录的：当 0 处理
+            base_qty = 0
+        psize = _piece_size_for_sku(sku_meta)
+        # 折算「件」量：不取整，保留一位小数供下游计算
+        bags = (float(base_qty) / psize) if psize else None
+        stock_data.append({
+            "sku_id": sku_id,
+            "sku_name": sku_meta["sku_name"],
+            "category": sku_meta["category"],
+            "base_unit": sku_meta["base_unit"],
+            "当前库存_件（请填）": bags if bags is not None else "",
+            "当前库存_base": float(base_qty),
+        })
 
 
 # ============ 计算补货 ============
@@ -355,6 +423,58 @@ with out.open("w", encoding="utf-8-sig", newline="") as f:
     w.writeheader()
     w.writerows(plan)
 
+# 额外输出：当前库存（件/袋） —— 供老王下单时对照
+# 件大小（pack_size_base 或 箱下一级到 base 的 rate）是进货/采购的最小粒度。
+if args.pieces_out:
+    pieces_out = Path(args.pieces_out)
+else:
+    pieces_out = DATA / f"inventory_pieces_{today.strftime('%Y%m%d')}.csv"
+piece_rows = []
+for sku_id, sku_meta in sku_map.items():
+    p = next((x for x in plan if x["sku_id"] == sku_id), None)
+    if p:
+        cur_base = p["当前_基准"]
+        psize = p["袋大小"]
+        bpb = p["每箱袋数"]
+        base_unit = p["base_unit"]
+        category = p["category"]
+        sku_name = p["sku_name"]
+    else:
+        # 未进入 plan（未配箱规格 / 未盘 等），从 sku_meta + inventory.json 补齐
+        cur_base = 0.0
+        try:
+            inv_obj  # noqa
+        except NameError:
+            inv_obj = json.loads((DATA / "inventory.json").read_text(encoding="utf-8"))
+        cur_base = float(inv_obj.get("skus", {}).get(sku_id, {}).get("quantity") or 0)
+        psize = _piece_size_for_sku(sku_meta)
+        box = box_size_of(sku_meta)
+        try:
+            bpb = int(round(box / float(psize))) if (box and psize) else None
+        except Exception:
+            bpb = None
+        base_unit = sku_meta["base_unit"]
+        category = sku_meta["category"]
+        sku_name = sku_meta["sku_name"]
+    pieces = (float(cur_base) / float(psize)) if psize else None
+    boxes_now = (pieces / bpb) if (pieces is not None and bpb) else None
+    piece_rows.append({
+        "sku_id": sku_id,
+        "sku_name": sku_name,
+        "category": category,
+        "当前_base量": round(float(cur_base), 2),
+        "base_unit": base_unit,
+        "件大小": psize if psize is not None else "",
+        "件单位": _piece_unit_label(sku_meta),  # 袋/块/条/提/把
+        "当前_件": round(pieces, 2) if pieces is not None else "",
+        "每箱件数": bpb if bpb is not None else "",
+        "当前_箱": round(boxes_now, 2) if boxes_now is not None else "",
+    })
+with pieces_out.open("w", encoding="utf-8-sig", newline="") as f:
+    w = csv.DictWriter(f, fieldnames=list(piece_rows[0].keys()))
+    w.writeheader()
+    w.writerows(piece_rows)
+
 
 # ============ 控制台打印 ============
 print("=" * 110)
@@ -421,4 +541,5 @@ print(f"  需下单 SKU:   {len(need_order)} 个")
 print(f"  需下单总数:   {sum(p['建议下单_箱'] for p in need_order)} 箱")
 print(f"  库存充足:     {len(ok)} 个")
 print(f"  未盘/未配:    {len(warn) + len(unknown_pack)} 个")
-print(f"\n📄 详细报表: {out}")
+print(f"\n📄 补货详细报表: {out}")
+print(f"📄 库存折件报表: {pieces_out}")
